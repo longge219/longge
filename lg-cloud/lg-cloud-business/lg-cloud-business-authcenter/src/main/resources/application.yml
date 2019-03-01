@@ -1,0 +1,54 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: AuthCenter
+  profiles:
+    active: dev
+  redis:
+    timeout: 10000ms
+    lettuce:
+      pool:
+        maxActive: 8
+        maxIdle: 8
+        minIdle: 0
+        maxWait: -1ms
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ##续约更新时间间隔设置5秒，m默认30s
+    lease-renewal-interval-in-seconds: 5
+    ##续约到期时间10秒，默认是90秒
+    lease-expiration-duration-in-seconds: 10
+        
+###feign 默认关闭熔断，请看HystrixFeignConfiguration
+feign:
+  hystrix:
+    enabled: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000 #超时时间
+      circuitBreaker:
+        requestVolumeThreshold: 3  #每秒3次请求
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+ 
+---
+spring:
+  profiles: dev
+  redis:
+    host: 10.30.0.41
+    port: 6379
+    password: jianglong
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:jianglong@10.30.0.41:1111/eureka/
