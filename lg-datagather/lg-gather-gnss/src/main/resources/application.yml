@@ -1,0 +1,97 @@
+server:
+  port: 81
+com:
+  orieange:
+    system:
+       socketType: server #socket类型
+       socketProtocol: qxrtcm3.2 #协议名称
+       socketKeepalive: false #Socket参数，连接保活，默认值为False。启用该功能时，TCP会主动探测空闲连接的有效性。可以将此功能视为TCP的心跳机制，需要注意的是：默认的心跳间隔是7200s即2小时。Netty默认关闭该功能
+       socketReuseaddr: true #地址复用，默认值False。有四种情况可以使用：(1).当有一个有相同本地地址和端口的socket1处于TIME_WAIT状态时，而你希望启动的程序的socket2要占用该地址和端口，比如重启服务且保持先前端口。(2).有多块网卡或用IP Alias技术的机器在同一端口启动多个进程，但每个进程绑定的本地IP地址不能相同。(3).单个进程绑定相同的端口到多个socket上，但每个socket绑定的ip地址不同。(4).完全相同的地址和端口的重复绑定。但这只用于UDP的多播，不用于TCP。
+       socketTcpNodelay: true #TCP参数，立即发送数据，默认值为Ture（Netty默认为True而操作系统默认为False）。该值设置Nagle算法的启用，改算法将小的碎片数据连接成更大的报文来最小化所发送的报文的数量，如果需要发送一些较小的报文，则需要禁用该算法。Netty默认禁用该算法，从而最小化报文传输延时。
+       socketBacklog: 1024 #  Socket参数，服务端接受连接的队列长度，如果队列已满，客户端连接将被拒绝
+       socketSndbuf: 10485760 # Socket参数，TCP数据发送缓冲区大小。
+       socketRevbuf: 10485760 # Socket参数，TCP数据接收缓冲区大小。
+       socketRead: 120 #读超时时间
+       socketWrite: 120 #写超时时间
+       socketReadAndWrite: 120 #读写超时时间
+       socketSsl: false #使用ssl加密
+       socketJksFile: /securesocket.jks #ssl 加密 jks文件地址
+       socketJksStorePassword: jianglong #读取jks密码
+       socketjksCertificatePassword: jianglong #读取私钥密码
+       serverPort: 8082 #端口
+       serverBossThread: 1  #用于处理客户端的连接请求
+       serverWorkThread: 4  #用于处理与各个客户端连接的IO操作
+       serverPeriod: 10  #扫描频次
+       clientBossThread: 1
+       clientConnectTime: 3000 # 链接超时
+       clientMaxTimes: 0 #最大重连次数，赋值小于1表示无限次数。
+       clientPeriod: 5000 #重连间隔时间，毫秒
+spring:
+  jpa:
+    open-in-view: true
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+      naming: 
+        physical-strategy: com.orieange.hpRelationalDb.CustomNamingStrategy
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid: 
+      # 下面为连接池的补充设置，应用到上面所有数据源中
+      # 初始化大小，最小，最大
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat,wall,log4j2
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      packagesToScan: com.orieange
+      # 合并多个DruidDataSource的监控数据
+      # useGlobalDataSourceStat: true
+  application:
+      name: hp-aftertreatment-calculate
+  profiles:
+     active: prod
+    
+fdfs:
+  so-timeout: 500001
+  connect-timeout: 60001
+  thumb-image:
+     width: 150
+     height: 150
+  tracker-list:
+     - 10.30.0.95:22122
+     - 10.30.0.96:22122
+  pool:
+    max-total: 153   #从池中借出的对象的最大数目
+    max-wait-millis: 102
+    jmx-name-base: 1
+    jmx-name-prefix: 1
+    
+
+logging:
+   config: classpath:log4j2.xml
+   
+---
+spring:
+  profiles: prod
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.30.0.11:3306/highprecisiontest?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: ori18502800930

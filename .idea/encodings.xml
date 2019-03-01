@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-datagather" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-rtcm" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lg-system/lg-db-plugins/lgdbplugins.iml" filepath="$PROJECT_DIR$/lg-system/lg-db-plugins/lgdbplugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lgflinkjob.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lgflinkjob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lgflinksink.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lgflinksink.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lgcloudbusinessauthcenter" />
+        <module name="lgcloudbusinesscommon" />
+        <module name="lgcloudbusinesspluginses" />
+        <module name="lgcloudbusinesspluginsmybatis" />
+        <module name="lgcloudbusinessservicebasic" />
+        <module name="lgcloudbusinessutils" />
+        <module name="lgcloudbusinesswebbasic" />
+        <module name="lgcloudcore" />
+        <module name="lgflinksinkes6" />
+        <module name="lgflinksourcekafka" />
+        <module name="lgflinktaskrtkcalculate" />
+        <module name="lggathergnss" />
+        <module name="lggatherkafka" />
+        <module name="lggathermqtt" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lg-flink-task" target="1.8" />
+      <module name="lggatherrtcm" target="1.8" />
+      <module name="lgsystem" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
