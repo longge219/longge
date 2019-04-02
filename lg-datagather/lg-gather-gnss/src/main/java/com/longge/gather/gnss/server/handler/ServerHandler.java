@@ -43,7 +43,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 	@Override
 	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		logger.info("Channel：channelId [ " + ctx.channel().id().asLongText() + " ]主动断开了连接.");
-		channelServiceImpl.deleleChannel(ctx.channel().id().asLongText(),true);
+		channelServiceImpl.deleleChannel(ctx.channel().id().asLongText());
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
         		if (event.state() == IdleState.READER_IDLE) {
                	  //关闭连接
                   logger.info("Channel：channelId [ " + ctx.channel().id().asLongText() + " ]出现网络故障无数据上传");
-            	  channelServiceImpl.deleleChannel(ctx.channel().id().asLongText(),true);
+            	  channelServiceImpl.deleleChannel(ctx.channel().id().asLongText());
     			} 
             } else {
                  // 传递给下一个处理程序

@@ -7,18 +7,24 @@ import javax.annotation.Nullable;
 /**通过watermark对数据重排序，来保证整体数据流的有序性*/
 public class MetricWatermark implements AssignerWithPeriodicWatermarks<Metrics> {
 
-    private long currentTimestamp = Long.MIN_VALUE;
+    private final long   maxOutOfOrderness = 5000; //允许数据的最大乱序时间5秒
 
+    private long  currentMaxTimestamp;
+
+    //是从数据本身中提取 EventTime
+    @Override
+    public long extractTimestamp(Metrics metrics, long previousElementTimestamp) {
+        long timestamp = metrics.getTimestamp() / (1000); //转换成秒
+        this.currentMaxTimestamp = Math.max(timestamp,currentMaxTimestamp)  ;
+        return timestamp;
+    }
+
+    //获取当前水位线
     @Nullable
     @Override
     public Watermark getCurrentWatermark() {
-        return new Watermark(currentTimestamp == Long.MIN_VALUE ? Long.MIN_VALUE : currentTimestamp - 1);
+        return new Watermark(currentMaxTimestamp - maxOutOfOrderness);
     }
 
-    @Override
-    public long extractTimestamp(Metrics metrics, long l) {
-        long timestamp = metrics.getTimestamp() / (1000 * 1000);
-        this.currentTimestamp = timestamp;
-        return timestamp;
-    }
+
 }

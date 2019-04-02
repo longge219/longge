@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.transparam.projection;
-import com.orieange.common.protocal.rtcm32.head.ProtocolHead;
-import com.orieange.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.common.protocal.rtcm32.head.ProtocolHead;
+import com.longge.gather.gnss.common.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 投影参数电文1026
@@ -8,7 +8,7 @@ import lombok.Data;
  * @create 2018-04-02
  **/
 @Data
-public class Projection_1026  implements ProtocolHead{
+public class Projection_1026  implements ProtocolHead {
 
 	@Override
 	public int getProtocolHead() {
