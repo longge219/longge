@@ -1,4 +1,4 @@
-package com.longge.gather.kafka.core;
+package com.longge.gather.kafka.threadpool;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author: jianglong
- * @description: kafka生产者线程池
+ * @description: 线程池类重写
  * @date: 2019-02-28
  */
 public class VisibleThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {

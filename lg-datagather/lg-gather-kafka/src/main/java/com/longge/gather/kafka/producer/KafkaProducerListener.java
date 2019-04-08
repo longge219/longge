@@ -1,12 +1,9 @@
 package com.longge.gather.kafka.producer;
-
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.support.ProducerListener;
-
 import java.util.concurrent.BlockingQueue;
-
 /**
  * @author: jianglong
  * @description: kafka生产者消费监听器

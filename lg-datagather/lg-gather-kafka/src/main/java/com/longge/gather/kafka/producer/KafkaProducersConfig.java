@@ -1,5 +1,4 @@
 package com.longge.gather.kafka.producer;
-
 import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -10,11 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author: jianglong
  * @description: kafka生产者配置
