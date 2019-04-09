@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.transparam.bdks;
 import com.longge.gather.gnss.common.protocal.rtcm32.head.ProtocolHead;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 莫洛金斯基-巴德卡斯电文1022

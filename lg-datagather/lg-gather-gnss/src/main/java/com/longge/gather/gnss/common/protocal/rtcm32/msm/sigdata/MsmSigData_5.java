@@ -1,5 +1,5 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.msm.sigdata;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description MSM5 信号数据的内容

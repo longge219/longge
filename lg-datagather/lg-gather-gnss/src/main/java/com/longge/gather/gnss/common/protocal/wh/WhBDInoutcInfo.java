@@ -1,5 +1,5 @@
 package com.longge.gather.gnss.common.protocal.wh;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 武汉导航院北斗电离层模型改正参数和UTC时间参数

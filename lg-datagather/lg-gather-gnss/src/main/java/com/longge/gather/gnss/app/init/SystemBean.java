@@ -5,10 +5,10 @@ import lombok.Data;
 /**
  * @description 系统启动通信配置参数
  * @author jianglong
- * @create 2018-03-26
+ * @create 2019-03-26
  **/
 @Component
-@ConfigurationProperties(prefix ="com.orieange.system")
+@ConfigurationProperties(prefix ="com.longge.netty")
 @Data
 public class SystemBean {
 	

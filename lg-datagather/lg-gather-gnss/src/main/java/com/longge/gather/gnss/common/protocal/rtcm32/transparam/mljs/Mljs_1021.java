@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.transparam.mljs;
 import com.longge.gather.gnss.common.protocal.rtcm32.head.ProtocolHead;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 赫尔默特/莫洛金斯基电文1021

@@ -2,7 +2,8 @@ package com.longge.gather.gnss.common.protocal.rtcm32.msm.data;
 import com.longge.gather.gnss.common.protocal.rtcm32.msm.head.MsmHead;
 import com.longge.gather.gnss.common.protocal.rtcm32.msm.satdata.MsmSatData_123;
 import com.longge.gather.gnss.common.protocal.rtcm32.msm.sigdata.MsmSigData_2;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
+
 /**
  * @description MSM_2电文
  * @author jianglong

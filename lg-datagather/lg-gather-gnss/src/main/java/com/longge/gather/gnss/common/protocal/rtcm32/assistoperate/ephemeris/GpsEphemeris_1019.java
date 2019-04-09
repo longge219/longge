@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.ephemeris;
 import com.longge.gather.gnss.common.protocal.rtcm32.head.ProtocolHead;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description GPS卫星星历数据电文1019

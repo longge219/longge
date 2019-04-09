@@ -17,7 +17,7 @@ import java.util.concurrent.BlockingQueue;
  * @date: 2019-02-28
  */
 @Component
-@ConfigurationProperties(prefix = "com.long.threadPool")
+@ConfigurationProperties(prefix = "com.longge.threadpool")
 @Getter
 @Setter
 @ToString

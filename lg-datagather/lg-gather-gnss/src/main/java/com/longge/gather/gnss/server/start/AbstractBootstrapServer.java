@@ -1,16 +1,14 @@
 package com.longge.gather.gnss.server.start;
 import java.security.KeyStore;
 import java.util.concurrent.TimeUnit;
-
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLEngine;
-
 import com.longge.gather.gnss.app.init.SystemBean;
-import com.longge.gather.gnss.common.codec.QXRtcm32Decoder;
-import com.longge.gather.gnss.common.codec.QXRtcm32Encoder;
-import com.longge.gather.gnss.common.codec.Rtcm32Decoder;
-import com.longge.gather.gnss.common.codec.Rtcm32Encoder;
+import com.longge.gather.gnss.server.codec.QXRtcm32Decoder;
+import com.longge.gather.gnss.server.codec.QXRtcm32Encoder;
+import com.longge.gather.gnss.server.codec.Rtcm32Decoder;
+import com.longge.gather.gnss.server.codec.Rtcm32Encoder;
 import com.longge.gather.gnss.server.handler.ServerHandler;
 import com.longge.gather.gnss.server.ssl.SecureSocketSslContextFactory;
 import com.longge.gather.gnss.utils.SpringBeanUtils;

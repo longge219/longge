@@ -2,8 +2,7 @@ package com.longge.gather.gnss.utils;
 /**
  * @Description:基础类型与数组装换
  * @create Author:jiangl
- * @create Date:2016-2-15
- * @version V1.0
+ * @create Date:2019-2-15
  */
 public class ByteConvert {
 	

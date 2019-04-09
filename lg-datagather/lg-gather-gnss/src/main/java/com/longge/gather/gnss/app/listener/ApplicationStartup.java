@@ -27,7 +27,6 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
 			}else{
 				logger.error("socket类型配置出错................."+systemBean.getSocketType());
 			}
-
 		}
 	}
 

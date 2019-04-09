@@ -11,7 +11,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication(scanBasePackages = {"com.longge"})
 @EnableAspectJAutoProxy
 public class GatherGnssLauncher {
-
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(GatherGnssLauncher.class);
         springApplication.addListeners(new ApplicationStartup());

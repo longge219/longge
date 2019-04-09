@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.arp;
 import com.longge.gather.gnss.common.protocal.rtcm32.head.ProtocolHead;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 固定天线参考点电文1006

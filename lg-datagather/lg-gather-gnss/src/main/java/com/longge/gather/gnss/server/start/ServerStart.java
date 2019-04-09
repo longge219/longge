@@ -63,9 +63,7 @@ public class ServerStart extends AbstractBootstrapServer {
 		});
 	}
 
-	/**
-	 * 关闭服务
-	 */
+	/**关闭服务*/
 	public void shutdown() {
 		if (workGroup != null && bossGroup != null) {
 			try {
@@ -78,9 +76,7 @@ public class ServerStart extends AbstractBootstrapServer {
 		}
 	}
 
-	/**
-	 * 初始化EnentPool
-	 */
+	/**初始化EnentPool*/
 	private void initEventPool() {
 		bootstrap = new ServerBootstrap();
 		bossGroup = new NioEventLoopGroup(systemBean.getServerBossThread(), new ThreadFactory() {

@@ -7,5 +7,5 @@ package com.longge.gather.kafka.service;
 public interface KafkaProducerService {
 
      /**发送消息*/
-     void sendMessage(String topic, String msgData);
+     void sendMessage(String topic, Object msgData);
 }

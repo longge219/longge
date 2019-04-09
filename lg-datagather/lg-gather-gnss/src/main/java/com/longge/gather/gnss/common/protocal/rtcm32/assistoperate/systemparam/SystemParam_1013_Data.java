@@ -1,5 +1,5 @@
 package com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.systemparam;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import lombok.Data;
 /**
  * @description 辅助信息--系统参数电文1003数据体

@@ -1,12 +1,14 @@
-package com.longge.gather.gnss.common.reflect;
+package com.longge.gather.gnss.server.reflect;
 import com.longge.gather.gnss.common.protocal.rtcm32.arp.Arp_1006;
 import com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.ephemeris.BDSEphemeris_1046;
 import com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.ephemeris.GpsEphemeris_1019;
 import com.longge.gather.gnss.common.protocal.rtcm32.msm.data.*;
 import com.longge.gather.gnss.common.protocal.wh.WhBDInoutcInfo;
 import com.longge.gather.gnss.common.protocal.wh.WhInoutcInfo;
+
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * @Description:封装报文与报文id对应集合
  * @create Author:jianglong
@@ -14,7 +16,7 @@ import java.util.Map;
  * @version V1.0
  */
 public abstract class ClassMap{
-	protected static final Map<Integer,ClassHandler> map=new HashMap<Integer, ClassHandler>();
+	protected static final Map<Integer, ClassHandler> map=new HashMap<Integer, ClassHandler>();
 	protected void init(){
 		                                                                   /**原始观测电文*/
 		 /**RTCM---SMS---GPS*/

@@ -1,4 +1,4 @@
-package com.longge.gather.gnss.common.reflect;
+package com.longge.gather.gnss.server.reflect;
 
 public class ClassHandler {
 	

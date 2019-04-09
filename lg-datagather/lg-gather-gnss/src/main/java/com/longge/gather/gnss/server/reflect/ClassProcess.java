@@ -1,6 +1,6 @@
-package com.longge.gather.gnss.common.reflect;
+package com.longge.gather.gnss.server.reflect;
 
-public class ClassProcess extends ClassMap{
+public class ClassProcess extends ClassMap {
 	public ClassProcess(){
 		init();
 	}

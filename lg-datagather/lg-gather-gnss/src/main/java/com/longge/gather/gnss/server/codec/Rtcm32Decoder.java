@@ -1,17 +1,18 @@
-package com.longge.gather.gnss.common.codec;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
-import java.util.List;
-import com.longge.gather.gnss.common.reflect.ClassProcess;
-import com.longge.gather.gnss.common.reflect.SubAnnotation;
+package com.longge.gather.gnss.server.codec;
+import com.longge.gather.gnss.server.reflect.ClassProcess;
+import com.longge.gather.gnss.server.reflect.SubAnnotation;
 import com.longge.gather.gnss.utils.Bits;
 import com.longge.gather.gnss.utils.ByteConvert;
 import com.longge.gather.gnss.utils.StringUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
+import java.util.List;
+
 /**
  * @Description:自定义RTCM3.2协议解码器
  * @create Author:jianglong

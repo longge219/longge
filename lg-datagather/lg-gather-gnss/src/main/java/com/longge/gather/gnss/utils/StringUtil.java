@@ -1,9 +1,8 @@
 package com.longge.gather.gnss.utils;
 /**
  * @Description:字符串处理
- * @create Author:jiangl
- * @create Date:2016-6-13
- * @version V1.0
+ * @create Author:jianglong
+ * @create Date:2019-02-13
  */
 public class StringUtil {
 	
@@ -75,11 +74,5 @@ public class StringUtil {
 		while(in.length()<max) in =" "+in;
 
 		return in;
-	}
-	
-	public static void main(String[] args) {
-		String test = "00";
-		String name =  "";
-		System.out.println(se(name,2)+test);
 	}
 }

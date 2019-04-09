@@ -1,4 +1,5 @@
 package com.longge.gather.kafka.service.impl;
+import com.longge.gather.kafka.fastjson.FastJsonUtils;
 import com.longge.gather.kafka.service.KafkaProducerService;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -19,9 +20,9 @@ public class KafkaProducerServiceImpl implements KafkaProducerService {
     @Resource
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    public void sendMessage(String topic , String msgData){
+    public void sendMessage(String topic , Object msgData){
         executor.execute(() ->{
-            kafkaTemplate.sendDefault(topic,msgData);
+            kafkaTemplate.sendDefault(topic, FastJsonUtils.ObjectTojson(msgData));
         });
     }
 }
