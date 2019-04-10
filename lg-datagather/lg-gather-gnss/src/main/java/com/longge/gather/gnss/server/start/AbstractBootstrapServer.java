@@ -4,7 +4,8 @@ import java.util.concurrent.TimeUnit;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLEngine;
-import com.longge.gather.gnss.app.init.SystemBean;
+
+import com.longge.gather.gnss.app.NettyBean;
 import com.longge.gather.gnss.server.codec.QXRtcm32Decoder;
 import com.longge.gather.gnss.server.codec.QXRtcm32Encoder;
 import com.longge.gather.gnss.server.codec.Rtcm32Decoder;
@@ -34,29 +35,26 @@ public abstract class AbstractBootstrapServer implements BootstrapServer {
 	 * @param: channelPipeline
 	 * @param: serverBean
 	 */
-	protected void initHandler(ChannelPipeline channelPipeline, SystemBean systemBean) {
-		if (systemBean.isSocketSsl()) {
-			if (!ObjectUtils.allNotNull(systemBean.getSocketjksCertificatePassword(), systemBean.getSocketJksFile(),systemBean.getSocketJksStorePassword())) {
+	protected void initHandler(ChannelPipeline channelPipeline, NettyBean nettyBean) {
+		if (nettyBean.isSocketSsl()) {
+			if (!ObjectUtils.allNotNull(nettyBean.getSocketjksCertificatePassword(), nettyBean.getSocketJksFile(),nettyBean.getSocketJksStorePassword())) {
 				throw new NullPointerException("SSL file and password is null");
 			}
 			// 设置SSL--channel
-			channelPipeline.addLast("ssl", initSsl(systemBean));
+			channelPipeline.addLast("ssl", initSsl(nettyBean));
 		}
 		// 设置协议处理器--channel
-		intProtocolHandler(channelPipeline, systemBean);
+		intProtocolHandler(channelPipeline, nettyBean);
 		// 设置空闲心跳空闲检测--channel
-		channelPipeline.addLast(new IdleStateHandler(systemBean.getSocketRead(), 
-				                                    systemBean.getSocketWrite(), 
-				                                    systemBean.getSocketReadAndWrite(),
-				                                    TimeUnit.SECONDS));
+		channelPipeline.addLast(new IdleStateHandler(nettyBean.getSocketRead(),nettyBean.getSocketWrite(),nettyBean.getSocketReadAndWrite(),TimeUnit.SECONDS));
 		// 设置业务处理类
 		channelPipeline.addLast(SpringBeanUtils.getBean(ServerHandler.class));
 	}
 
 	/** 设置协议---编解码 */
-	private void intProtocolHandler(ChannelPipeline channelPipeline, SystemBean systemBean) {
-		if (StringUtils.isNotBlank(systemBean.getSocketProtocol())) {
-			switch (systemBean.getSocketProtocol()) {
+	private void intProtocolHandler(ChannelPipeline channelPipeline, NettyBean nettyBean) {
+		if (StringUtils.isNotBlank(nettyBean.getSocketProtocol())) {
+			switch (nettyBean.getSocketProtocol()) {
 			case "qxrtcm3.2":
 				// HTTP请求消息解码器
 				channelPipeline.addLast("decoder", new QXRtcm32Decoder());
@@ -71,13 +69,13 @@ public abstract class AbstractBootstrapServer implements BootstrapServer {
 				break;
 			
 		   default:
-				  logger.error("启动系统参数配置协议名称错处-----" + systemBean.getSocketProtocol());
+				  logger.error("启动系统参数配置协议名称错处-----" + nettyBean.getSocketProtocol());
 			}
 		}
 	}
 
 	/**设置SSL*/
-	private SslHandler initSsl(SystemBean systemBean) {
+	private SslHandler initSsl(NettyBean nettyBean) {
 		String algorithm = SystemPropertyUtil.get("ssl.KeyManagerFactory.algorithm");
 		if (algorithm == null) {
 			algorithm = "SunX509";
@@ -86,10 +84,10 @@ public abstract class AbstractBootstrapServer implements BootstrapServer {
 		try {
 			//
 			KeyStore ks = KeyStore.getInstance("JKS");
-			ks.load(SecureSocketSslContextFactory.class.getResourceAsStream(systemBean.getSocketJksFile()),
-					systemBean.getSocketJksStorePassword().toCharArray());
+			ks.load(SecureSocketSslContextFactory.class.getResourceAsStream(nettyBean.getSocketJksFile()),
+					nettyBean.getSocketJksStorePassword().toCharArray());
 			KeyManagerFactory kmf = KeyManagerFactory.getInstance(algorithm);
-			kmf.init(ks, systemBean.getSocketjksCertificatePassword().toCharArray());
+			kmf.init(ks, nettyBean.getSocketjksCertificatePassword().toCharArray());
 			serverContext = SSLContext.getInstance("TLS");
 			serverContext.init(kmf.getKeyManagers(), null, null);
 		} catch (Exception e) {

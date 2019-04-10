@@ -1,7 +1,9 @@
-package com.longge.gather.gnss.app.init;
+package com.longge.gather.gnss.app;
+
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-import lombok.Data;
+
 /**
  * @description 系统启动通信配置参数
  * @author jianglong
@@ -10,7 +12,7 @@ import lombok.Data;
 @Component
 @ConfigurationProperties(prefix ="com.longge.netty")
 @Data
-public class SystemBean {
+public class NettyBean {
 	
 	/**socket类型*/
 	private String socketType;

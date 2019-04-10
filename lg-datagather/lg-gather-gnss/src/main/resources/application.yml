@@ -29,7 +29,7 @@ com:
        socketJksFile: /securesocket.jks #ssl 加密 jks文件地址
        socketJksStorePassword: jianglong #读取jks密码
        socketjksCertificatePassword: jianglong #读取私钥密码
-       serverPort: 8081 #端口
+       serverPort: 8082 #端口
        serverBossThread: 1  #用于处理客户端的连接请求
        serverWorkThread: 4  #用于处理与各个客户端连接的IO操作
        serverPeriod: 10  #扫描频次

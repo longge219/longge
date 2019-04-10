@@ -187,19 +187,4 @@ public class ObserverData {
 	 * */
 	 private int gnssExSigCnr;
 
-	@Override
-	public String toString() {
-		return "ObserverData [protocolHead=" + protocolHead + ", rfsID=" + rfsID + ", gnssTow=" + gnssTow
-				+ ", manyFlag=" + manyFlag + ", iods=" + iods + ", retain=" + retain + ", clockCorrectFlag="
-				+ clockCorrectFlag + ", exClockFlag=" + exClockFlag + ", gnssSmoothnessTypeFlag="
-				+ gnssSmoothnessTypeFlag + ", gnssSmoothnessInterval=" + gnssSmoothnessInterval + ", gnssSatNum="
-				+ gnssSatNum + ", satType=" + satType + ", gnssSigNum=" + gnssSigNum + ", gnssSatGenDisMsInt="
-				+ gnssSatGenDisMsInt + ", gnssSatGenDisMsRem=" + gnssSatGenDisMsRem + ", exSatInfo=" + exSatInfo
-				+ ", gnssSatGenPhaRate=" + gnssSatGenPhaRate + ", gnssSigPrePse=" + gnssSigPrePse + ", gnssSigPhaPse="
-				+ gnssSigPhaPse + ", gnssSigPhaPseCloTimFlag=" + gnssSigPhaPseCloTimFlag + ", halfCycleBlurMark="
-				+ halfCycleBlurMark + ", gnssSigCnr=" + gnssSigCnr + ", gnssSigPrePhaRate=" + gnssSigPrePhaRate
-				+ ", gnssExSigPrePse=" + gnssExSigPrePse + ", gnssExSigPhaPse=" + gnssExSigPhaPse
-				+ ", gnssExSigPhaPseCloTimFlag=" + gnssExSigPhaPseCloTimFlag + ", gnssExSigCnr=" + gnssExSigCnr + "]";
-	}
-	 
 }

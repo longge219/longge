@@ -10,6 +10,10 @@ import lombok.Setter;
 public class SiteInfo implements Serializable{
 	
 	private static final long serialVersionUID = 5267240330758286052L;
+
+	public SiteInfo (String  siteNo){
+	    this.siteNo = siteNo;
+    }
 	
 	private String  siteNo;
 	

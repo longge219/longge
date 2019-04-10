@@ -108,7 +108,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     			 Msm_4 msm4 = (Msm_4)msg;
     			 serverHandlerServiceImpl.doMsm4(msm4, receiverId);
     		 }catch(Exception e){
-    			  logger.error("处理MSM_4业务出错");
+    			  logger.error("设备编号："+receiverId+" 处理MSM_4业务出错");
     			  e.printStackTrace();
     		 }
     	 }
@@ -118,7 +118,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     			 GpsEphemeris_1019 ge1019 = (GpsEphemeris_1019)msg;
     			 serverHandlerServiceImpl.doGpsEphemeris1019(ge1019, receiverId);
     		 }catch(Exception e){
-    			 logger.error("处理GpsEphemeris_1019业务出错");
+    			 logger.error("设备编号："+receiverId+"处理GpsEphemeris_1019业务出错");
     			 e.printStackTrace();
     		 }
     	 }
@@ -128,7 +128,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     			 BDSEphemeris_1046 bdsE1046 = (BDSEphemeris_1046)msg;
     			 serverHandlerServiceImpl.doBDSEphemeris1046(bdsE1046, receiverId);
     		 }catch(Exception e){
-    			 logger.error("处理BDSEphemeris_1046业务出错");
+    			 logger.error("设备编号："+receiverId+"处理BDSEphemeris_1046业务出错");
     			 e.printStackTrace();
     		 }
     	 }
@@ -140,7 +140,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     			   String channelID  = ctx.channel().id().asLongText();
     			   serverHandlerServiceImpl.doArp1006(channelID,arp1006);
     		   }catch(Exception e){
-    			   logger.error("处理固定天线数据业务出错");
+    			   logger.error("处理Arp_1006业务出错");
     			   e.printStackTrace();
     		   }
     	 }

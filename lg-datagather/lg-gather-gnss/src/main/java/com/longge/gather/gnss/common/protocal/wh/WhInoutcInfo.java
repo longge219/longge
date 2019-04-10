@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class WhInoutcInfo{
 	
-	@SubAnnotation(type = "object",startPos = 6, len = 22, mark="",className="com.orieange.common.protocal.wh.WhHead")
+	@SubAnnotation(type = "object",startPos = 6, len = 22, mark="",className="com.longge.gather.gnss.common.protocal.wh.WhHead")
 	private WhHead whHead;
 	
 	@SubAnnotation(type = "double",startPos = 28, len = 8, mark="",className="")

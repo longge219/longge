@@ -17,7 +17,7 @@ public class Observation_1001  extends GpsRtkHead implements ProtocolHead {
 	/**
 	 * startPos = 0 表示依赖卫星数量解码
 	 * */
-	@SubAnnotation(type = "array",startPos = 0, len = 58, mark="",className="com.orieange.common.protocal.rtcm32.observation.gpsrtk.Observation_1001_Data")
+	@SubAnnotation(type = "array",startPos = 0, len = 58, mark="",className="com.longge.gather.gnss.common.protocal.rtcm32.observation.gpsrtk.Observation_1001_Data")
 	private Observation_1001_Data[] dataArray; //GPSRTK观测值电文1001数据体数组
 
 	public Observation_1001_Data[] getDataArray() {

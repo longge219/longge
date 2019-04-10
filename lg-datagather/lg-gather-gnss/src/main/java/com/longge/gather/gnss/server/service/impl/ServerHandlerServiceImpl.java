@@ -19,6 +19,7 @@ import com.longge.gather.gnss.common.protocal.rtcm32.msm.satdata.MsmSatData_46;
 import com.longge.gather.gnss.common.protocal.rtcm32.msm.sigdata.MsmSigData_4;
 import com.longge.gather.gnss.common.protocal.wh.WhBDInoutcInfo;
 import com.longge.gather.gnss.common.protocal.wh.WhInoutcInfo;
+import com.longge.gather.gnss.common.single.ObsDataManager;
 import com.longge.gather.gnss.gnss.calculate.PosCalculate;
 import com.longge.gather.gnss.gnss.calculate.Time;
 import com.longge.gather.gnss.gnss.constant.GnssConstants;
@@ -124,6 +125,10 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		 }
 		 //转换对象
 		 Observations observations = getObservations(obsList);
+		 //合并同一时刻的GPS和北斗观测数据
+		 SiteInfo siteInfo = new  SiteInfo(siteNo);
+		 observations.setSiteInfo(siteInfo);
+		ObsDataManager.getInstance().addObservations(observations);
 	 }
 	
 	
@@ -292,15 +297,14 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 	public void doArp1006(String channelId, Arp_1006 arp1006) throws Exception{
 
 			if(channelServiceImpl.hasChannel(channelId)){
-//						channelServiceImpl.deleleChannel(channelId,false);
-//						channelServiceImpl.cacheWorkingChannel(channelId, String.valueOf(arp1006.getRfsID()));
-//						logger.info(arp1006.getRfsID()+"已授权通过...........");
+						channelServiceImpl.deleleChannel(channelId);
+						channelServiceImpl.cacheWorkingChannel(channelId, String.valueOf(arp1006.getRfsID()));
 			}else{
 				channelServiceImpl.cacheWorkingChannel(channelId, String.valueOf(arp1006.getRfsID()));
 				logger.info(arp1006.getRfsID()+"授权通过...........");
 			}
 		     //存储移动站设备的天线坐标
-		     SiteInfo siteInfo = new SiteInfo();
+		     SiteInfo siteInfo = new SiteInfo(String.valueOf(arp1006.getRfsID()));
 			 siteInfo.setLat(arp1006.getArpEcefX()*Math.pow(10, -4));
 			 siteInfo.setLng(arp1006.getArpEcefY()*Math.pow(10, -4));
 			 siteInfo.setAlt(arp1006.getArpEcefZ()*Math.pow(10, -4));

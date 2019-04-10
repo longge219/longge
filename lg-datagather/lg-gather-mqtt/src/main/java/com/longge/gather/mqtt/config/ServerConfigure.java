@@ -32,8 +32,6 @@ public class ServerConfigure {
         scanRunnable.start();
         return sacnScheduled;
     }
-
-
     /**
      * 初始化服务器通信参数对象
      * */
