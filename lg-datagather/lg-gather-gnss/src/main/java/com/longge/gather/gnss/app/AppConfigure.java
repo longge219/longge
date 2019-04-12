@@ -2,6 +2,7 @@ package com.longge.gather.gnss.app;
 import com.longge.gather.gnss.scan.ScanRunnable;
 import com.longge.gather.gnss.scan.ScanScheduled;
 import com.longge.gather.gnss.server.start.InitServer;
+import com.longge.gather.kafka.service.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -18,6 +19,9 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties({NettyBean.class})
 public class AppConfigure {
 
+    @Autowired
+    private KafkaProducerService kafkaProducerService;
+
     /**初始化服务器通信参数对象*/
     @Bean(initMethod = "open", destroyMethod = "close")
     @ConditionalOnMissingBean
@@ -27,10 +31,10 @@ public class AppConfigure {
 
     /***/
     @Bean
-    @ConditionalOnMissingBean(name = "sacnScheduled")
+    @ConditionalOnMissingBean(name = "scanScheduled")
     public ScanRunnable initRunable(@Autowired NettyBean nettyBean){
         //消息重发周期
-        ScanRunnable sacnScheduled = new ScanScheduled();
+        ScanRunnable sacnScheduled = new ScanScheduled(kafkaProducerService);
         Thread scanRunnable = new Thread(sacnScheduled);
         scanRunnable.setDaemon(true);
         scanRunnable.start();

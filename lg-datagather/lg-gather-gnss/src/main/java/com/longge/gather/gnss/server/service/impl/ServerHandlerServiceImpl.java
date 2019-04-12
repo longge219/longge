@@ -25,6 +25,7 @@ import com.longge.gather.gnss.gnss.calculate.Time;
 import com.longge.gather.gnss.gnss.constant.GnssConstants;
 import com.longge.gather.gnss.gnss.model.ObservationSet;
 import com.longge.gather.gnss.gnss.model.Observations;
+import com.longge.gather.gnss.scan.ScanRunnable;
 import com.longge.gather.gnss.server.service.ChannelService;
 import com.longge.gather.gnss.server.service.ServerHandlerService;
 import com.longge.gather.gnss.utils.Bits;
@@ -32,6 +33,7 @@ import com.longge.gather.gnss.utils.CollectionUtil;
 import com.longge.gather.gnss.utils.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
  * @description 报文业务处理
@@ -46,6 +48,9 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		
 		@Resource
 		private ChannelService channelServiceImpl;
+
+		@Autowired
+		private ScanRunnable scanScheduled;
 	
 	/**
 	 * @description 处理MSM-4卫星观测数据电文
@@ -128,7 +133,7 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		 //合并同一时刻的GPS和北斗观测数据
 		 SiteInfo siteInfo = new  SiteInfo(siteNo);
 		 observations.setSiteInfo(siteInfo);
-		ObsDataManager.getInstance().addObservations(observations);
+		ObsDataManager.getInstance(scanScheduled).addObservations(observations);
 	 }
 	
 	
