@@ -12,7 +12,6 @@
         <module name="lgcloudbusinesspluginses" />
         <module name="lgcloudbusinesspluginsmybatis" />
         <module name="lgcloudbusinessservicebasic" />
-        <module name="lgcloudbusinessutils" />
         <module name="lgcloudbusinesswebbasic" />
         <module name="lgcloudcore" />
         <module name="lgflinksinkes6" />
@@ -25,6 +24,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lg-flink-task" target="1.8" />
+      <module name="lgcloudbusinessutils" target="1.8" />
       <module name="lggatherrtcm" target="1.8" />
       <module name="lgsystem" target="1.5" />
     </bytecodeTargetLevel>
