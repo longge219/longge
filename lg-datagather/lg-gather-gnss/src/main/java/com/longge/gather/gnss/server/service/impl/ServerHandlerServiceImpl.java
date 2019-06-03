@@ -4,36 +4,31 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
-import com.longge.gather.gnss.common.model.EphemerisData;
-import com.longge.gather.gnss.common.model.InoutcData;
-import com.longge.gather.gnss.common.model.ObserverData;
-import com.longge.gather.gnss.common.model.SiteInfo;
-import com.longge.gather.gnss.common.protocal.rtcm32.arp.Arp_1006;
-import com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.ephemeris.BDSEphemeris_1046;
-import com.longge.gather.gnss.common.protocal.rtcm32.assistoperate.ephemeris.GpsEphemeris_1019;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.constant.BdsSignal;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.constant.GpsSignal;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.data.Msm_4;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.head.MsmHead;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.satdata.MsmSatData_46;
-import com.longge.gather.gnss.common.protocal.rtcm32.msm.sigdata.MsmSigData_4;
-import com.longge.gather.gnss.common.protocal.wh.WhBDInoutcInfo;
-import com.longge.gather.gnss.common.protocal.wh.WhInoutcInfo;
-import com.longge.gather.gnss.common.single.ObsDataManager;
 import com.longge.gather.gnss.gnss.calculate.PosCalculate;
 import com.longge.gather.gnss.gnss.calculate.Time;
 import com.longge.gather.gnss.gnss.constant.GnssConstants;
-import com.longge.gather.gnss.gnss.model.ObservationSet;
-import com.longge.gather.gnss.gnss.model.Observations;
 import com.longge.gather.gnss.scan.ScanRunnable;
+import com.longge.gather.gnss.server.model.*;
+import com.longge.gather.gnss.server.protocal.rtcm32.arp.Arp_1006;
+import com.longge.gather.gnss.server.protocal.rtcm32.assistoperate.ephemeris.BDSEphemeris_1046;
+import com.longge.gather.gnss.server.protocal.rtcm32.assistoperate.ephemeris.GpsEphemeris_1019;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.constant.BdsSignal;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.constant.GpsSignal;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.data.Msm_4;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.head.MsmHead;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.satdata.MsmSatData_46;
+import com.longge.gather.gnss.server.protocal.rtcm32.msm.sigdata.MsmSigData_4;
+import com.longge.gather.gnss.server.protocal.wh.WhBDInoutcInfo;
+import com.longge.gather.gnss.server.protocal.wh.WhInoutcInfo;
 import com.longge.gather.gnss.server.service.ChannelService;
 import com.longge.gather.gnss.server.service.ServerHandlerService;
+import com.longge.gather.gnss.server.single.NavDataManager;
+import com.longge.gather.gnss.server.single.ObsDataManager;
 import com.longge.gather.gnss.utils.Bits;
 import com.longge.gather.gnss.utils.CollectionUtil;
 import com.longge.gather.gnss.utils.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
  * @description 报文业务处理
@@ -45,13 +40,18 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 	
 	    //日志
 	    private static Logger logger = LogManager.getLogger(ServerHandlerServiceImpl.class);
-		
+
+	    //观测数据缓存对象
+	    private static ObsDataManager obsDataManager = ObsDataManager.getInstance();
+
+	    //星历观测数据缓存对象
+	    private  static NavDataManager navDataManager = NavDataManager.getInstance();
+
 		@Resource
 		private ChannelService channelServiceImpl;
 
-		@Autowired
+		@Resource
 		private ScanRunnable scanScheduled;
-	
 	/**
 	 * @description 处理MSM-4卫星观测数据电文
 	 * @param: ReceiverInfo Msm_4
@@ -130,10 +130,12 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		 }
 		 //转换对象
 		 Observations observations = getObservations(obsList);
-		 //合并同一时刻的GPS和北斗观测数据
-		 SiteInfo siteInfo = new  SiteInfo(siteNo);
-		 observations.setSiteInfo(siteInfo);
-		ObsDataManager.getInstance(scanScheduled).addObservations(observations);
+		 if(observations != null){
+			 //合并同一时刻的GPS和北斗观测数据m
+			 SiteInfo siteInfo = new  SiteInfo(siteNo);
+			 observations.setSiteInfo(siteInfo);
+			 obsDataManager.addObservations(scanScheduled,observations);
+		 }
 	 }
 	
 	
@@ -388,7 +390,7 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		  Map<Integer, ObservationSet> tempObject = null;
 		 if(CollectionUtil.isNotNullAndNotEmpty(obsDataList)){
 		    /**填充卫星观测数据*/
-		    tempObject =  new HashMap<Integer,ObservationSet>();
+		    tempObject =  new HashMap<Integer, ObservationSet>();
 		    if(obsDataList.get(0).getSatType() == 'G'){
 		    	observations =   new Observations(new Time(obsDataList.get(0).getGnssTow()/GnssConstants.MILLISEC_IN_SEC,0),0);
 		    }else if(obsDataList.get(0).getSatType() == 'C'){

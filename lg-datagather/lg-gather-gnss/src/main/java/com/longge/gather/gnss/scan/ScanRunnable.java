@@ -1,6 +1,5 @@
 package com.longge.gather.gnss.scan;
-import com.longge.gather.gnss.gnss.model.Observations;
-
+import com.longge.gather.gnss.server.model.Observations;
 import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 /**
@@ -10,30 +9,23 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  **/
 public abstract class ScanRunnable  implements Runnable{
 
-    //安全非堵塞队列
-    private ConcurrentLinkedQueue<Observations> queue = new ConcurrentLinkedQueue<>();
+    //观测数据安全非堵塞队列
+    private ConcurrentLinkedQueue<Observations> obsQueue = new ConcurrentLinkedQueue<>();
 
-    //队列添加一个元素
-    public  boolean addQueue(Observations observations){
-        return queue.add(observations);
+    //队列一个时刻的观测数据
+    public  boolean adObsQueue(Observations observations){
+        return obsQueue.add(observations);
     }
-
-    //队列添加一个集合
-    public boolean addQueues(List<Observations> observationsList){
-        return queue.addAll(observationsList);
-    }
-
 
     @Override
     public void run() {
         for (;;){
             Observations observations;
-            for (;(observations=queue.poll())!=null;){
+            for (;(observations=obsQueue.poll())!=null;){
                  doObservations(observations);
             }
         }
     }
-
     /**扫描业务处理观测数据*/
     public  abstract  void  doObservations(Observations observations);
 

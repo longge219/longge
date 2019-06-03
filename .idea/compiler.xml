@@ -8,22 +8,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lgcloudbusinessauthcenter" />
-        <module name="lgcloudbusinesscommon" />
-        <module name="lgcloudbusinesspluginses" />
-        <module name="lgcloudbusinesspluginsmybatis" />
+        <module name="lggathermqtt" />
         <module name="lgcloudbusinessservicebasic" />
+        <module name="lg-cloud-business-plugins-es" />
+        <module name="lg-flink-source-kafka" />
+        <module name="lg-cloud-business-web-basic" />
+        <module name="lg-cloud-core" />
+        <module name="lg-gather-kafka" />
+        <module name="lg-cloud-business-service-basic" />
         <module name="lgcloudbusinesswebbasic" />
-        <module name="lgcloudcore" />
+        <module name="lgflinktaskrtkcalculate" />
+        <module name="lgcloudbusinesscommon" />
+        <module name="lggatherkafka" />
+        <module name="lg-gather-gnss" />
+        <module name="lg-flink-sink-es6" />
+        <module name="lgcloudbusinesspluginses" />
+        <module name="lg-cloud-business-plugins-mybatis" />
+        <module name="lgcloudbusinesspluginsmybatis" />
         <module name="lgflinksinkes6" />
         <module name="lgflinksourcekafka" />
-        <module name="lgflinktaskrtkcalculate" />
         <module name="lggathergnss" />
-        <module name="lggatherkafka" />
-        <module name="lggathermqtt" />
+        <module name="lgcloudcore" />
+        <module name="lg-flink-task-rtkcalculate" />
+        <module name="lg-cloud-business-authcenter" />
+        <module name="lg-cloud-business-common" />
+        <module name="lg-gather-mqtt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lg-flink-task" target="1.8" />
       <module name="lgcloudbusinessutils" target="1.8" />
       <module name="lggatherrtcm" target="1.8" />
       <module name="lgsystem" target="1.5" />

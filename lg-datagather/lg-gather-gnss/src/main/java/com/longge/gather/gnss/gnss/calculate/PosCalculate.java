@@ -1,6 +1,6 @@
 package com.longge.gather.gnss.gnss.calculate;
-import com.longge.gather.gnss.common.model.ObserverData;
 import com.longge.gather.gnss.gnss.constant.GnssConstants;
+import com.longge.gather.gnss.server.model.ObserverData;
 import org.ejml.simple.SimpleMatrix;
 /**
  * Description:星历相关计算

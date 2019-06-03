@@ -8,15 +8,19 @@ public class GnssConstants {
 	// 光速 单位m/s
 	public static final double SPEED_OF_LIGHT = 299792458.0;
 	//地心引力GM
-	public static final double EARTH_GRAVITATIONAL_CONSTANT = 3.986005e14;
+	public static final double EARTH_GRAVITATIONAL_CONSTANT_GPS = 3.986005e14;
+	public static final double EARTH_GRAVITATIONAL_CONSTANT_BDS = 3.986004418e14;
+	
 	//自转角速度W
-	public static final double EARTH_ANGULAR_VELOCITY = 7.2921151467e-5; 
+	public static final double EARTH_ANGULAR_VELOCITY_GPS = 7.2921151467e-5; 
+	public static final double EARTH_ANGULAR_VELOCITY_BDS = 7.292115e-5; 
 	//相对论常数
-	public static final double RELATIVISTIC_ERROR_CONSTANT = -4.442807633e-10; 
+	public static final double RELATIVISTIC_ERROR_CONSTANT_BDS = -4.4428073090439775e-10; 
+	public static final double RELATIVISTIC_ERROR_CONSTANT_GPS = -4.4428076333930602e-10; 
 	//gps信号传输时间
 	public static final double GPS_APPROX_TRAVEL_TIME = 0.072;
 	// 长轴
-	public static final double WGS84_SEMI_MAJOR_AXIS = 6378137;
+	public static final double WGS84_SEMI_MAJOR_AXIS = 6378137.0;
 	//扁率
 	public static final double WGS84_FLATTENING = 1 / 298.257222101;
 	//离心率
@@ -27,6 +31,7 @@ public class GnssConstants {
 	public static final long SEC_IN_HOUR = 3600L;
 	public static final long MILLISEC_IN_SEC = 1000L;
 	public static final long SEC_IN_HALF_WEEK = 302400L;
+	public static final long SEC_IN_WEEK = 604800L;
 	// UNIX time和GPS time差异 
 	public static final long UNIX_GPS_DAYS_DIFF = 3657L;
 	//标准气压

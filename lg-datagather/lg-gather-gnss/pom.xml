@@ -8,9 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>lg-gather-gnss</artifactId>
-
+    <properties>
+        <start-class>com.longge.gather.gnss.GatherGnssLauncher</start-class>
+    </properties>
     <dependencies>
         <!-- springboot -->
         <dependency>
@@ -26,6 +27,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.1</version>
         </dependency>
         <!--AOP配置 -->
         <dependency>
@@ -59,7 +65,14 @@
             <artifactId>simple</artifactId>
             <version>0.30</version>
         </dependency>
+        <!--JNA-->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+        </dependency>
     </dependencies>
-
-
 </project>

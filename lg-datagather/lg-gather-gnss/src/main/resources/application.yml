@@ -45,3 +45,5 @@ com:
       visiblePool: false #是否打印线程信息
       visibleLog: false #是否打印日志
       listenerQueueSize: 100000 #生产监听者队列大小
+logging:
+  config: classpath:log4j2.xml

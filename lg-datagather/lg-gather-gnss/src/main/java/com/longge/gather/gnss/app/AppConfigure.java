@@ -32,7 +32,7 @@ public class AppConfigure {
     /***/
     @Bean
     @ConditionalOnMissingBean(name = "scanScheduled")
-    public ScanRunnable initRunable(@Autowired NettyBean nettyBean){
+    public ScanRunnable initRunable(){
         //消息重发周期
         ScanRunnable sacnScheduled = new ScanScheduled(kafkaProducerService);
         Thread scanRunnable = new Thread(sacnScheduled);
