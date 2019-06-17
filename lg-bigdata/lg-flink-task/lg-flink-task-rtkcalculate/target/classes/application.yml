@@ -1,0 +1,9 @@
+server:
+  port: 81
+com:
+  longge:
+    kafka:
+       servers: localhost:9092,localhost:9093 #kafka的节点的IP或者hostName，多个使用逗号分隔
+       zookeeperConnect: localhost:2181,localhost:2182 #zookeeper的节点的IP或者hostName，多个使用逗号进行分隔
+       groupId: rtk #flink consumer flink的消费者的group.id
+       topic: alert-metrics

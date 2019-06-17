@@ -19,7 +19,7 @@ public class ScanScheduled extends ScanRunnable{
 
     @Override
     public void doObservations(Observations observations) {
-        System.out.println("接收机号:"+ observations.getSiteInfo().getSiteNo()+"时间:"+observations.getRefTime().getSecNum());
+        System.out.println("接收机号:"+ observations.getSiteInfo().getSiteNo()+"时间:"+observations.getRefTime().getGpsWeekSec());
         //生成obs主题消息
         //kafkaProducerService.sendMessage("obs",originalData);
     }

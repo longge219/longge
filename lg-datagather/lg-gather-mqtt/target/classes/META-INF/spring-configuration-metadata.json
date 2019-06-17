@@ -1,0 +1,127 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server",
+      "type": "com.longge.gather.mqtt.bean.InitBean"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.backlog",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.boss-thread",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.inital-delay",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server.jks-certificate-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server.jks-file",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server.jks-store-password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": false,
+      "name": "com.orieange.server.keepalive",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.period",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server.protocol",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.read",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.read-and-write",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": false,
+      "name": "com.orieange.server.reuseaddr",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.revbuf",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "name": "com.orieange.server.server-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.sndbuf",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": false,
+      "name": "com.orieange.server.ssl",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": false,
+      "name": "com.orieange.server.tcp-nodelay",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.work-thread",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.longge.gather.mqtt.bean.InitBean",
+      "defaultValue": 0,
+      "name": "com.orieange.server.write",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

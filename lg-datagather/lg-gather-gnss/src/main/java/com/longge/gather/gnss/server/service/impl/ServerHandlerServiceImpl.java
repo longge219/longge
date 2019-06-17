@@ -150,72 +150,67 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		EphemerisData ephemerisData = new EphemerisData('G',ge1019.getGpsSatelliteId());
 		                                              /**数据转换*/
 		//DF076--GPS周数
-		ephemerisData.setGpsCirNum(ge1019.getGpsCirNum());
+		ephemerisData.setWeek(ge1019.getGpsCirNum());
 		//DF077--GPS URA
-		ephemerisData.setGpsUra(ge1019.getGpsUra());
+		ephemerisData.setSvAccur(ge1019.getGpsUra());
 		//DF078--GPS L2 测距码标志
-		ephemerisData.setGpsL2PseudorangeFlag(Integer.valueOf(ge1019.getGpsL2PseudorangeFlag(),2));
+		ephemerisData.setL2Flag(Integer.valueOf(ge1019.getGpsL2PseudorangeFlag(),2));
 		// DF079--GPS IDOT(单位π/s)
-		ephemerisData.setGpsIdot(ge1019.getGpsIdot()*Math.pow(2, -43)* GnssConstants.PI_ORBIT);
+		ephemerisData.setIDot(ge1019.getGpsIdot()*Math.pow(2, -43)* GnssConstants.PI_ORBIT);
 		//DF071--GPS IODE
-		ephemerisData.setGpsIode(ge1019.getGpsIode());
+		ephemerisData.setIode(ge1019.getGpsIode());
 		//DF081--GPS toc(单位 s)
-		ephemerisData.setGpsToc(ge1019.getGpsToc()*Math.pow(2, 4));
+		ephemerisData.setToc(ge1019.getGpsToc()*Math.pow(2, 4));
 		//DF082--GPS af2(单位s/s2)
-		ephemerisData.setGpsAf2(ge1019.getGpsAf2()*Math.pow(2, -55));
+		ephemerisData.setAf2(ge1019.getGpsAf2()*Math.pow(2, -55));
 		//DF083--GPS af1(单位 s/s)
-		ephemerisData.setGpsAf1(ge1019.getGpsAf1()*Math.pow(2, -43));
+		ephemerisData.setAf1(ge1019.getGpsAf1()*Math.pow(2, -43));
 		//DF084--GPS af0(单位 s)
-		ephemerisData.setGpsAf0(ge1019.getGpsAf0()*Math.pow(2, -31));
+		ephemerisData.setAf0(ge1019.getGpsAf0()*Math.pow(2, -31));
 		//DF085--GPS IODC
-		ephemerisData.setGpsIodc(ge1019.getGpsIodc());
+		ephemerisData.setIodc(ge1019.getGpsIodc());
 		//DF086--GPS Crs(单位 m)
-		ephemerisData.setGpsCrs(ge1019.getGpsCrs()*Math.pow(2, -5));
+		ephemerisData.setCrs(ge1019.getGpsCrs()*Math.pow(2, -5));
 		//DF087--GPSΔn(单位 π/s)
-		ephemerisData.setGpsDelataN(ge1019.getGpsN()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
+		ephemerisData.setDeltaN(ge1019.getGpsN()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
 		//DF088--GPS M0(单位 π)
-		ephemerisData.setGpsMo(ge1019.getGpsMo()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		ephemerisData.setM0(ge1019.getGpsMo()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		//DF089--GPS Cuc (单位 rad)
-		ephemerisData.setGpsCuc(ge1019.getGpsCuc()*Math.pow(2, -29));
+		ephemerisData.setCuc(ge1019.getGpsCuc()*Math.pow(2, -29));
 		//DF090--GPS e(无单位)
-		ephemerisData.setGpsE(ge1019.getGpsE()*Math.pow(2, -33));
+		ephemerisData.setE(ge1019.getGpsE()*Math.pow(2, -33));
 		//DF091--GPS Cus(单位 rad)
-		ephemerisData.setGpsCus(ge1019.getGpsCus()*Math.pow(2, -29));
+		ephemerisData.setCus(ge1019.getGpsCus()*Math.pow(2, -29));
 		//DF092--GPS a1/2(单位 m1/2)
-		ephemerisData.setGpsA(ge1019.getGpsA()*Math.pow(2, -19));
+		ephemerisData.setRootA(ge1019.getGpsA()*Math.pow(2, -19));
 		//DF093--GPS toe(单位 s)
-		ephemerisData.setGpsToe(ge1019.getGpsToe()*Math.pow(2, 4));
+		ephemerisData.setToe(ge1019.getGpsToe()*Math.pow(2, 4));
 		//DF094--GPS Cic(单位 rad)
-		ephemerisData.setGpsCic(ge1019.getGpsCic()*Math.pow(2, -29));
+		ephemerisData.setCic(ge1019.getGpsCic()*Math.pow(2, -29));
 		//DF095--GPS Ω0 (单位 π)
-		ephemerisData.setGpsOmega0(ge1019.getGpsOmega0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		ephemerisData.setOmega0(ge1019.getGpsOmega0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		//DF096--GPS Cis (单位 rad)
-		ephemerisData.setGpsCis(ge1019.getGpsCis()*Math.pow(2, -29));
+		ephemerisData.setCis(ge1019.getGpsCis()*Math.pow(2, -29));
 		//DF097--GPS i0(单位 π)
-		ephemerisData.setGpsI0(ge1019.getGpsI0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		ephemerisData.setI0(ge1019.getGpsI0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		//DF098--GPS Crc(单位 m)
-		ephemerisData.setGpsCrc(ge1019.getGpsCrc()*Math.pow(2, -5));
+		ephemerisData.setCrc(ge1019.getGpsCrc()*Math.pow(2, -5));
 		//DF099--GPS ω(单位 π)
-		ephemerisData.setGpsOmega(ge1019.getGpsW()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		ephemerisData.setOmega(ge1019.getGpsW()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		//DF100--GPS OMEGADOT(单位 π/s)
-		ephemerisData.setGpsOmegadot(ge1019.getGpsOmegadot()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
+		ephemerisData.setOmegaDot(ge1019.getGpsOmegadot()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
 		//DF101--GPS tGD(单位 s)
-		ephemerisData.setGpsTgd(ge1019.getGpsTgd()*Math.pow(2, -31));
+		ephemerisData.setTgd(ge1019.getGpsTgd()*Math.pow(2, -31));
 		//DF102--GPS健康状态
-		ephemerisData.setGpsHealth(ge1019.getGpsHealth());
+		ephemerisData.setSvHealth(ge1019.getGpsHealth());
 		//DF103--GPS L2 P
 		if(ge1019.isGpsL2p()){
-			ephemerisData.setGpsL2p(1);
+			ephemerisData.setL2Flag(1);
 		}else{
-			ephemerisData.setGpsL2p(0);
-		}
-		//DF137--GPS 拟合间隔
-		if(ge1019.isGpsMatchInterval()){
-			ephemerisData.setGpsMatchInterval(1);
-		}else{
-			ephemerisData.setGpsMatchInterval(0);
+			ephemerisData.setL2Flag(0);
 		}
 		//星历数据处理
+		navDataManager.addEphemerisData(ephemerisData);
 	}
 	
 	/**
@@ -228,70 +223,70 @@ public class ServerHandlerServiceImpl implements ServerHandlerService {
 		EphemerisData ephemerisData = new EphemerisData('C',bdsE1046.getBDS_sateliteID());
 		                                              /**数据转换*/
 		   //BDT 周数，起始于 2006 年 1 月 1 日 UTC 0 点
-		    ephemerisData.setBdsCirnum(bdsE1046.getBDS_Cirnum());
+		    ephemerisData.setWeek(bdsE1046.getBDS_Cirnum());
 		   //BDS 卫星的用户距离精度（URA）指数，无单位
 		    if( 0<=bdsE1046.getBDS_Urai() && bdsE1046.getBDS_Urai()<6){
-		    	ephemerisData.setBdsUra((int)Math.pow( 2, bdsE1046.getBDS_Urai()/2 +1));
+		    	ephemerisData.setSvAccur((int)Math.pow( 2, bdsE1046.getBDS_Urai()/2 +1));
 		    }else if( 6<=bdsE1046.getBDS_Urai() && bdsE1046.getBDS_Urai()<15){
-		    	ephemerisData.setBdsUra((int)Math.pow(2,bdsE1046.getBDS_Urai() - 2));
+		    	ephemerisData.setSvAccur((int)Math.pow(2,bdsE1046.getBDS_Urai() - 2));
 		    }else{
 		    	logger.info("BDS URA无效，该条星历电文无效");
 		    	return;
 		    }
 		   // BDS 卫星轨道倾角变化率，单位 π/s
-		    ephemerisData.setBdsIdot(bdsE1046.getBDS_IDOT()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setIDot(bdsE1046.getBDS_IDOT()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
 		   // BDS 卫星星历数据龄期
-		    ephemerisData.setBdsAdode(bdsE1046.getBDS_ADODE());
+		    ephemerisData.setIode(bdsE1046.getBDS_ADODE());
 		   //BDS 卫星钟数据参考时刻，单位 s。
-		    ephemerisData.setBdsToc(bdsE1046.getBDS_toc()*Math.pow(2, 3));
+		    ephemerisData.setToc(bdsE1046.getBDS_toc()*Math.pow(2, 3));
 		   //BDS 卫星钟钟漂改正参数，单位 s/s2
-		    ephemerisData.setBdsA2(bdsE1046.getBDS_a2()*Math.pow(2, -66));
+		    ephemerisData.setAf2(bdsE1046.getBDS_a2()*Math.pow(2, -66));
 		   //BDS 卫星钟钟速改正参数，单位 s/s
-		    ephemerisData.setBdsA1(bdsE1046.getBDS_a1()*Math.pow(2, -50));
+		    ephemerisData.setAf1(bdsE1046.getBDS_a1()*Math.pow(2, -50));
 		   //BDS 卫星钟钟差改正参数，单位 s。
-		    ephemerisData.setBdsA0(bdsE1046.getBDS_a0()*Math.pow(2, -33));
+		    ephemerisData.setAf0(bdsE1046.getBDS_a0()*Math.pow(2, -33));
 		   // BDS 卫星钟时钟数据龄期,无单位。
-		    ephemerisData.setBdsAodc(bdsE1046.getBDS_AODC());
+		    ephemerisData.setIodc(bdsE1046.getBDS_AODC());
 		   //BDS 卫星轨道半径正弦调和改正项的振幅，单位 m。
-		    ephemerisData.setBdsCrs(bdsE1046.getBDS_Crs()*Math.pow(2, -6));
+		    ephemerisData.setCrs(bdsE1046.getBDS_Crs()*Math.pow(2, -6));
 		   //BDS 卫星平均运动速率与计算值之差，单位 π/s。
-		    ephemerisData.setBdsDeltan(bdsE1046.getBDS_Deltan()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setDeltaN(bdsE1046.getBDS_Deltan()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星参考时间的平近点角，单位 π。
-		    ephemerisData.setBdsM0(bdsE1046.getBDS_M0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setM0(bdsE1046.getBDS_M0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星纬度幅角的余弦调和改正项的振幅，单位 rad。
-		    ephemerisData.setBdsCuc(bdsE1046.getBDS_Cuc()*Math.pow(2, -31));
+		    ephemerisData.setCuc(bdsE1046.getBDS_Cuc()*Math.pow(2, -31));
 		   //BDS 卫星轨道偏心率，无单位。
-		    ephemerisData.setBdsE(bdsE1046.getBDS_e()*Math.pow(2, -33));
+		    ephemerisData.setE(bdsE1046.getBDS_e()*Math.pow(2, -33));
 		   //BDS 卫星纬度幅角的正弦调和改正项的振幅，单位 rad。
-		    ephemerisData.setBdsCus(bdsE1046.getBDS_Cus()*Math.pow(2, -31));
+		    ephemerisData.setCus(bdsE1046.getBDS_Cus()*Math.pow(2, -31));
 		   //BDS 卫星轨道长半轴的平方根 单位 m1/2。
-		    ephemerisData.setBdsSqrta(bdsE1046.getBDS_sqrta()*Math.pow(2, -19));
+		    ephemerisData.setRootA(bdsE1046.getBDS_sqrta()*Math.pow(2, -19));
 		   //BDS 卫星星历数据参考时刻，单位 s。
-		    ephemerisData.setBdsToe(bdsE1046.getBDS_toe()*Math.pow(2, 3));
+		    ephemerisData.setToe(bdsE1046.getBDS_toe()*Math.pow(2, 3));
 		   //BDS 卫星轨道倾角的余弦调和改正项的振幅，单位 rad。
-		    ephemerisData.setBdsCic(bdsE1046.getBDS_Cic()*Math.pow(2, -31));
+		    ephemerisData.setCic(bdsE1046.getBDS_Cic()*Math.pow(2, -31));
 		   //BDS 卫星按参考时间计算的升交点赤经，单位 π
-		    ephemerisData.setBdsOmega0(bdsE1046.getBDS_Omega0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setOmega0(bdsE1046.getBDS_Omega0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星轨道倾角的正弦调和改正项的振幅，单位 rad。
-		    ephemerisData.setBdsCis(bdsE1046.getBDS_Cis()*Math.pow(2, -31));
+		    ephemerisData.setCis(bdsE1046.getBDS_Cis()*Math.pow(2, -31));
 		   //BDS 卫星参考时间的轨道倾角，单位 π。
-		    ephemerisData.setBdsI0(bdsE1046.getBDS_i0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setI0(bdsE1046.getBDS_i0()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星轨道半径的余弦调和改正项的振幅，单位 m。
-		    ephemerisData.setBdsCrc(bdsE1046.getBDS_Crc()*Math.pow(2, -6));
+		    ephemerisData.setCrc(bdsE1046.getBDS_Crc()*Math.pow(2, -6));
 		   //BDS 卫星近地点幅角，单位 π。
-		    ephemerisData.setBdsMinorOmega(bdsE1046.getBDS_minorOmega()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setOmega(bdsE1046.getBDS_minorOmega()*Math.pow(2, -31)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星升交点赤经变化率，单位 π/s。
-		    ephemerisData.setBdsOmegaDot(bdsE1046.getBDS_OmegaDOT()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
+		    ephemerisData.setOmegaDot(bdsE1046.getBDS_OmegaDOT()*Math.pow(2, -43)*GnssConstants.PI_ORBIT);
 		   //BDS 卫星 B1I 星上设备时延差，单位 ns。
-		    ephemerisData.setBdsTgd1(bdsE1046.getBDS_TGD1()*Math.pow(10, -10));
+		    ephemerisData.setTgd(bdsE1046.getBDS_TGD1()*Math.pow(10, -10));
 		   //BDS 卫星 B2I 星上设备时延差，单位 ns
-		    ephemerisData.setBdsTgd2(bdsE1046.getBDS_TGD2()*Math.pow(10, -10));
+		    ephemerisData.setTgd2(bdsE1046.getBDS_TGD2()*Math.pow(10, -10));
 		   //BDS 卫星健康信息
-		    ephemerisData.setBdsSatHealth(Integer.valueOf(String.valueOf(bdsE1046.getBDS_SatHealth().charAt(8))));
+		    ephemerisData.setSvHealth(Integer.valueOf(String.valueOf(bdsE1046.getBDS_SatHealth().charAt(8))));
 		    //卫星自主健康状态
-		    ephemerisData.setBdsSatSelfHealth(Integer.valueOf(bdsE1046.getBDS_SatSelfHealth()));
+		    ephemerisData.setSvHealth(Integer.valueOf(bdsE1046.getBDS_SatSelfHealth()));
 		    //处理星历数据
-		   
+		    navDataManager.addEphemerisData(ephemerisData);
 	}
 	
 		

@@ -1,6 +1,5 @@
 package com.longge.gather.gnss.scan;
 import com.longge.gather.gnss.server.model.Observations;
-import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 /**
  * @description 扫描已封装好的历元数据

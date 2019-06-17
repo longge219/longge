@@ -133,7 +133,9 @@ public class Coordinates{
 
     /**计算本地系统*/
 	public void computeLocal(Coordinates target) {
-		if(this.geod==null) computeGeodetic();
+		if(this.geod==null) {
+			computeGeodetic();
+		}
 		SimpleMatrix R = rotationMatrix(this);
 		enu = R.mult(target.minusXYZ(this));
 	}

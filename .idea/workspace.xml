@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3913ca1b-53fe-4560-aebc-c4548d427822" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6/target/classes/com/longge/flink/sink/es6/factory/ElasticSearchSinkFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6/target/classes/com/longge/flink/sink/es6/handler/CusElasticSearchFailureHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6/target/classes/com/longge/flink/sink/es6/properties/ElasticSearchSinkPropertiesConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/factory/KafkaSourceFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/properties/KafkaConfigPropertiesConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/MetricSchema.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/Metrics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/watermarks/MetricWatermark.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/RtkCalculateLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/app/listener/ApplicationStartup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/app/start/BootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/app/start/ServerStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/app/util/GsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/flink/factory/ExecutionEnvFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/com/longge/flink/rtk/flink/properties/TaskRtkPropertiesConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/com/longge/cloud/business/plugins/es/bean/EsModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/com/longge/cloud/business/plugins/es/bean/EsPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/com/longge/cloud/business/plugins/es/config/ElasticsearchConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/com/longge/cloud/business/plugins/es/controller/EsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/com/longge/cloud/business/plugins/es/utils/ElasticsearchUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseModuleResourcesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseRoleModuleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseSystemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/BaseUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/mybatis/mapper/OauthClientDetailsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/calculate/ReceiverCalculateDll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/SatPosCalculate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/META-INF/lggathergnss.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/XincRTK.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/GatherGnssLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/app/AppConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/app/NettyBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$CALOUTPUT$ByReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$CALOUTPUT$ByValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$CALOUTPUT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$EPHDATA$ByReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$EPHDATA$ByValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$EPHDATA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$NAVDATA2$ByReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$NAVDATA2$ByValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$NAVDATA2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$ORIGINALDATA$ByReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$ORIGINALDATA$ByValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$ORIGINALDATA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$STARINFO$ByReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$STARINFO$ByValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper$STARINFO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/invok/DllHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/model/CalOutData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/model/OriginalData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/ci/model/StarInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/calculate/Coordinates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/calculate/PosCalculate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/calculate/Time.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/calculate/TimeConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/calculate/TopocentricCoordinates.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/constant/GnssConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/model/EphGps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/model/Satellite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/gnss/model/SatellitePosition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/scan/ScanRunnable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/scan/ScanScheduled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/channel/ChannelManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/codec/QXRtcm32Decoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/codec/QXRtcm32Encoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/codec/Rtcm32Decoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/codec/Rtcm32Encoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/handler/ServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/EphemerisData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/InoutcData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/ObservationSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/Observations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/ObserverData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/model/SiteInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/antenna/Antenna_1007.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/antenna/Antenna_1008.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/arp/Arp_1005.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/arp/Arp_1006.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/BDSEphemeris_1046.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/GlonassEphemeris_1020.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/GpsEphemeris_1019.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/systemparam/SystemParam_1013.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/systemparam/SystemParam_1013_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/head/ProtocolHead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/BdsSignal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/GpsSignal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/head/MsmHead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/satdata/MsmSatData_123.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/satdata/MsmSatData_46.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/satdata/MsmSatData_57.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/msm/sigdata/MsmSigData_7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/GpsRtkHead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1001_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004_Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/bdks/Bdks_1022.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/mljs/Mljs_1021.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1025.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1026.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1023.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1024.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/wh/WhBDInoutcInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/wh/WhHead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/protocal/wh/WhInoutcInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/reflect/ClassHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/reflect/ClassMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/reflect/ClassProcess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/reflect/SubAnnotation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/service/ChannelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/service/ServerHandlerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/service/impl/ChannelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/single/NavDataManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/single/ObsDataManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/SecureSocketKeyStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/SecureSocketSslContextFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/SecureSokcetTrustManagerFactory$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/SecureSokcetTrustManagerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/StreamReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/ssl/X509CertTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/AbstractBootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/BootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/InitServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/ServerStart$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/ServerStart$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/ServerStart$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/server/start/ServerStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/Bits.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/ByteConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/CollectionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/IpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/SpringBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/com/longge/gather/gnss/utils/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/META-INF/lggatherkafka.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/fastjson/FastJsonDeserializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/fastjson/FastJsonSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/fastjson/FastJsonUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/producer/KafkaProducerListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/producer/KafkaProducersConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/service/KafkaProducerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/service/impl/KafkaProducerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/threadpool/ExecutorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/threadpool/ThreadPoolConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/classes/com/longge/gather/kafka/threadpool/VisibleThreadPoolTaskExecutor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/META-INF/lggathermqtt.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/GatherMqttLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/InitBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/MqttChannel$MqttChannelBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/MqttChannel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/RetainMessage$RetainMessageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/RetainMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/SendMqttMessage$SendMqttMessageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/SendMqttMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/SessionMessage$SessionMessageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/SessionMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/WillMeaasge$WillMeaasgeBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/WillMeaasge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/BaseApi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/MqttChannelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService$TopicFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/PublishApiSevice$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/PublishApiSevice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/WillService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/coder/ByteBufToWebSocketFrameEncoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/coder/WebSocketFrameToByteBufDecoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/enums/ConfirmStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/enums/QosStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/enums/SessionStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/enums/SubStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/exception/ConnectionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/exception/NoFindHandlerException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/pool/DefaultThreadFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/pool/ExecutorQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/pool/Scheduled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/pool/StandardThreadExecutor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/SecureSocketKeyStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/SecureSocketSslContextFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/SecureSokcetTrustManagerFactory$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/SecureSokcetTrustManagerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/StreamReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/ssl/X509CertTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/ByteBufUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/IdWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/IpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/MessageId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/SpringBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/config/ServerConfigure.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/scan/SacnScheduled$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/scan/SacnScheduled.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/scan/ScanRunnable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/AbstractBootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/BootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/InitServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/MqttHandlerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/session/SessionManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/securesocket.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/TimeConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/EphGps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/Satellite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/SatellitePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/SatellitePosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanScheduled.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanScheduled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/EphemerisData.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/EphemerisData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObservationSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObservationSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/NavDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/NavDataManager.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/lg-system/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-job/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-source/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-task/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-core/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/" />
+    <ignored path="$PROJECT_DIR$/lg-datagather/target/" />
+    <ignored path="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/" />
+    <ignored path="$PROJECT_DIR$/lg-datagather/lg-gather-rtcm/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/target/" />
+    <ignored path="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/" />
+    <ignored path="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils/target/" />
+    <ignored path="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/target/" />
+    <ignored path="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/calculate/ReceiverCalculateDll.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="678">
+              <caret line="112" column="56" lean-forward="true" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getTableData</find>
+      <find>getenv</find>
+      <find>HttpServletResponse</find>
+      <find>KafkaProducerListener</find>
+      <find>JSONObject</find>
+      <find>visiblePool</find>
+      <find>acks</find>
+      <find>com.longge.gather.gnss.common.protocal.rtcm32.msm.head</find>
+      <find>com.longge.gather.gnss.common.protocal.rtcm32.msm.head.MsmHead</find>
+      <find>mqttFixedHeader</find>
+      <find>MqttChannelServiceImpl</find>
+      <find>mqttChannelServiceImpl</find>
+      <find>AbstractChannelService</find>
+      <find>SacnScheduled</find>
+      <find>ScanRunnable</find>
+      <find>initHandler</find>
+      <find>nettyBean</find>
+      <find>scanScheduled</find>
+      <find>channelServiceImpl</find>
+      <find>ObsDataManager</find>
+      <find>OriginalData</find>
+      <find>Attitude</find>
+      <find>CalOutData</find>
+      <find>EphemerisData</find>
+      <find>siteInfo</find>
+      <find>gnssCore</find>
+      <find>getReceiverClockError</find>
+      <find>phaseMap</find>
+      <find>iode</find>
+      <find>ORIGINALDATA</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/arp/Arp_1005.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/arp/Arp_1006.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/BDSEphemeris_1046.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/GlonassEphemeris_1020.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/ephemeris/GpsEphemeris_1019.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/assistoperate/systemparam/SystemParam_1013.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/head/MsmHead.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/bdks/Bdks_1022.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/mljs/Mljs_1021.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1025.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1026.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1023.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1024.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/reflect/ClassMap.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/antenna/Antenna_1007.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/antenna/Antenna_1008.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/handler/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/SiteInfo.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/ServerHandlerService.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/Observations.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/PosCalculate.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_4.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_3.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_2.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_1.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_5.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_6.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_7.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1001.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhBDInoutcInfo.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhInoutcInfo.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObserverData.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/Observations.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/ObsDataManager.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/Test.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanRunnable.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Coordinates.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Time.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/NavDataManager.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanScheduled.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObservationSet.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/SatellitePosition.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/EphemerisData.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/SatPosCalculate.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/GpsSignal.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/invok/DllHelper.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/calculate/ReceiverCalculateDll.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\tools\apache-maven-3.3.3\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.3.3" />
+        <option name="userSettingsFile" value="F:\tools\apache-maven-3.3.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559295040010" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.longge.gather.gnss.server.model" />
+      <recent name="com.longge.gather.gnss.server.single" />
+      <recent name="com.longge.gather.gnss.server.start" />
+      <recent name="com.longge.gather.gnss.app" />
+      <recent name="com.longge.gather.kafka.fastjson" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-gnss\src\main\java\com\longge\gather\gnss\gnss\calculate" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-gnss\src\main\java\com\longge\gather\gnss\gnss\model" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-gnss\src\main\java\com\longge\gather\gnss\ci\calculate" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-gnss\src\main\java\com\longge\gather\gnss\server\model" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-gnss\src\main\java\com\longge\gather\gnss\server" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="GatherGnssLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.gather.gnss.GatherGnssLauncher" />
+      <module name="lggathergnss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.longge.gather.gnss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.gather.gnss.server.single.Test" />
+      <module name="lggathergnss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.longge.gather.gnss.server.single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.gather.gnss.server.single.Test" />
+      <module name="lggathergnss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.longge.gather.gnss.server.single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.cloud.business.utils.excel.TestExcel" />
+      <module name="lgcloudbusinessutils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.longge.cloud.business.utils.excel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.GatherGnssLauncher" />
+        <item itemvalue="Application.TestExcel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3913ca1b-53fe-4560-aebc-c4548d427822" name="Default Changelist" comment="" />
+      <created>1550799241608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550799241608</updated>
+    </task>
+    <task id="LOCAL-00001" summary="添加authercenter">
+      <created>1551429140819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551429140820</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加authercenter">
+      <created>1551689114518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551689114518</updated>
+    </task>
+    <task id="LOCAL-00003" summary="同步更新">
+      <created>1554177090494</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554177090494</updated>
+    </task>
+    <task id="LOCAL-00004" summary="同步更新">
+      <created>1554725947718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554725947718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="同步更新">
+      <created>1554781936601</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554781936601</updated>
+    </task>
+    <task id="LOCAL-00006" summary="同步更新">
+      <created>1554890083272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554890083272</updated>
+    </task>
+    <task id="LOCAL-00007" summary="同步更新">
+      <created>1555041154220</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555041154220</updated>
+    </task>
+    <task id="LOCAL-00008" summary="同步更新">
+      <created>1558583529646</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558583529646</updated>
+    </task>
+    <task id="LOCAL-00009" summary="同步更新">
+      <created>1559526528777</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559526528777</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13251074" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.31853497" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946353" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49839056" weight="0.27857935" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946353" weight="0.32408434" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32852387" />
+      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32741398" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005365" side_tool="true" weight="0.27857935" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.2408435" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.32852387" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32939914" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加authercenter" />
+    <MESSAGE value="同步更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="同步更新" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003_Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="15" column="142" selection-start-line="15" selection-start-column="142" selection-end-line="15" selection-end-column="142" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="16" column="143" selection-start-line="16" selection-start-column="143" selection-end-line="16" selection-end-column="143" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002_Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="16" column="143" selection-start-line="16" selection-start-column="143" selection-end-line="16" selection-end-column="143" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004_Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/bdks/Bdks_1022.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/mljs/Mljs_1021.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-701">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1025.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/projection/Projection_1026.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1023.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-899">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/transparam/residual/Residual_1024.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-998">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhBDInoutcInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="119" selection-start-line="11" selection-start-column="119" selection-end-line="11" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhInoutcInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="119" selection-start-line="11" selection-start-column="119" selection-end-line="11" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/Observations.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/arp/Arp_1006.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ChannelServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="883">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/Test.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/ServerHandlerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/GatherGnssLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/InoutcData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/SiteInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/model/StarInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/model/CalOutData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/model/OriginalData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/constant/GnssConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObserverData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/ObsDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/EphGps.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/Satellite.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/NavDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="52" column="100" selection-start-line="52" selection-start-column="100" selection-end-line="52" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanScheduled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="122" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/SatellitePosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/TimeConvert.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/TopocentricCoordinates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2442">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/PosCalculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Coordinates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/EphemerisData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/GpsSignal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/SatPosCalculate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/Observations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1287">
+          <caret line="43" column="5" selection-start-line="40" selection-start-column="44" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#2526#2527#0" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2719#2720#0" expanded="true" />
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3196#3197#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3264#3265#0" expanded="true" />
+            <element signature="e#3297#3298#0" expanded="true" />
+            <element signature="e#3347#3348#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3430#3431#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3493#3494#0" expanded="true" />
+            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObservationSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="5" column="20" selection-start-line="5" selection-end-line="6" />
+          <folding>
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/BdsSignal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/invok/DllHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/calculate/ReceiverCalculateDll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="112" column="56" lean-forward="true" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lg-flink-sink</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

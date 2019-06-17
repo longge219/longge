@@ -1,5 +1,7 @@
 package com.longge.gather.gnss.server.single;
 import com.longge.gather.gnss.server.model.EphemerisData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 /**
@@ -9,22 +11,50 @@ import java.util.concurrent.ConcurrentMap;
  */
 public class NavDataManager {
 
+    private static final Logger logger  = LoggerFactory.getLogger(NavDataManager.class);
+
     private final static NavDataManager navDataManager = new NavDataManager();
 
     //观测数据
-    private static ConcurrentMap<String, EphemerisData> obsMap;
+    private static ConcurrentMap<String, EphemerisData>  navMap;
 
     private NavDataManager(){
-        obsMap = new ConcurrentHashMap<String, EphemerisData>();
+        navMap = new ConcurrentHashMap<String, EphemerisData>();
     }
 
     public static NavDataManager getInstance() {
         return navDataManager;
     }
 
+    /**添加导航数据--卫星类型和ID作为key*/
     public void  addEphemerisData(EphemerisData ephemerisData){
-        obsMap.put(ephemerisData.toString(),ephemerisData);
+        navMap.put(ephemerisData.toString(),ephemerisData);
     }
 
+    /**获取周数*/
+    public short getWeek(char satType){
+        for(EphemerisData ephemerisData:navMap.values()){
+            if(ephemerisData.getSatelliteType() == satType){
+               if(satType == 'G'){
+                   return (short)ephemerisData.getGpsCirNum();
+               }else if(satType == 'C'){
+                   return (short)ephemerisData.getBdsCirnum();
+               }else{
+                   logger.info("暂是不处理非GPS和北斗系统的数据");
+                   return 0;
+               }
+            }
+        }
+        return 0;
+    }
+    /**根据观测数据的卫星类型和编号查找*/
+    public EphemerisData findEph(char satType,int satID){
+        for(EphemerisData ephemerisData:navMap.values()){
+            if(ephemerisData.getSatelliteType()==satType && ephemerisData.getSatelliteId()== satID){
+                return ephemerisData;
+            }
+        }
+        return null;
+    }
 
 }

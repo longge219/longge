@@ -7,7 +7,7 @@ import java.util.Map;
  * @create 2018-07-11
  **/
 public class ObservationSet{
-	
+
 	//卫星系统类型
 	private char satType;
 	
@@ -22,6 +22,9 @@ public class ObservationSet{
 	
 	//信号CNR
 	private  Map<String,Integer> sigCnrMap = new HashMap<String,Integer>();
+
+	//多普勒值(赫兹)
+	private Map<String,Float> doppler = new HashMap<String,Float>();
 	
 	/*
 	 *  失锁指示 (LLI). Range: 0-7
@@ -113,6 +116,19 @@ public class ObservationSet{
 	  }
 	     return  0;
 	}
+
+	public void setDoppler(String sigCode, float dopplerValue) {
+		doppler.put(sigCode,dopplerValue);
+	}
+
+	public float getDoppler(String sigCode) {
+		if(doppler.containsKey(sigCode)){
+			return doppler.get(sigCode);
+		}
+		return 0;
+	}
+
+
 
 	public boolean isInUse() {
 	    return inUse;
