@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author jianglong
  * @create 2019-03-01
  **/
-@ConfigurationProperties(prefix ="com.orieange.server")
+@ConfigurationProperties(prefix ="com.longge.server")
 @Data
 public class InitBean {
 

@@ -34,11 +34,11 @@ public class NavDataManager {
     /**获取周数*/
     public short getWeek(char satType){
         for(EphemerisData ephemerisData:navMap.values()){
-            if(ephemerisData.getSatelliteType() == satType){
+            if(ephemerisData.getSatType()== satType){
                if(satType == 'G'){
-                   return (short)ephemerisData.getGpsCirNum();
+                   return (short)ephemerisData.getWeek();
                }else if(satType == 'C'){
-                   return (short)ephemerisData.getBdsCirnum();
+                   return (short)ephemerisData.getWeek();
                }else{
                    logger.info("暂是不处理非GPS和北斗系统的数据");
                    return 0;
@@ -50,7 +50,7 @@ public class NavDataManager {
     /**根据观测数据的卫星类型和编号查找*/
     public EphemerisData findEph(char satType,int satID){
         for(EphemerisData ephemerisData:navMap.values()){
-            if(ephemerisData.getSatelliteType()==satType && ephemerisData.getSatelliteId()== satID){
+            if(ephemerisData.getSatType()==satType && ephemerisData.getSatID()== satID){
                 return ephemerisData;
             }
         }

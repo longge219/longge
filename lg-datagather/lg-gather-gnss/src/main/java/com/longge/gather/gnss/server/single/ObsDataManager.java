@@ -25,7 +25,7 @@ public class ObsDataManager {
 	}
 
 	public void addObservations(ScanRunnable scanScheduled,Observations observations){
-		String key = observations.getRefTime().getSecNum()+"-"+observations.getSiteInfo().getSiteNo();
+		String key = observations.getRefTime().getMsec()+"-"+observations.getSiteInfo().getSiteNo();
 		if(obsMap.containsKey(key)){
 			Observations observationsOld = obsMap.get(key);
 			ArrayList<ObservationSet> obsSet = observations.getObsSet();

@@ -1,0 +1,5 @@
+server:
+  port: 6678
+dubbo:
+  application:
+    name: lg-gather-http

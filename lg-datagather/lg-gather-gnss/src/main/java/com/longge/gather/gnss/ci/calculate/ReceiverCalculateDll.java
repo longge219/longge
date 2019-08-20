@@ -77,7 +77,6 @@ public class ReceiverCalculateDll extends Coordinates {
 			 if(roverEph != null){
 				 ephSet.add(roverEph);
 			 }
-			
 			   /**GPS系统*/
 			   if(observationSet.getSatType() == 'G'){
 				    /**GPS-L1频点*/

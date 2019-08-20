@@ -16,6 +16,7 @@
         <module>lg-gather-rtcm</module>
         <module>lg-gather-kafka</module>
         <module>lg-gather-gnss</module>
+        <module>lg-gather-http</module>
     </modules>
 
 
