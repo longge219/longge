@@ -11,7 +11,6 @@
         <module name="lg-flink-sink-es6" />
         <module name="lg-plugins-mysql" />
         <module name="lgcloudbusinessservicebasic" />
-        <module name="lg-cloud-business-plugins-es" />
         <module name="lg-flink-source-kafka" />
         <module name="lggathermqtt" />
         <module name="lg-cloud-business-web-basic" />
@@ -40,6 +39,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lg-cloud-business-plugins" target="1.8" />
+      <module name="lg-cloud-business-plugins-es" target="1.8" />
       <module name="lgcloudbusinessutils" target="1.8" />
       <module name="lggatherrtcm" target="1.8" />
       <module name="lgsystem" target="1.5" />
