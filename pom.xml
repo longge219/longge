@@ -12,6 +12,7 @@
         <module>lg-bigdata</module>
         <module>lg-cloud</module>
         <module>lg-datagather</module>
+        <module>lg-plugins</module>
     </modules>
 
     <properties>

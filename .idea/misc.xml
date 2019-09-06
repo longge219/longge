@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils/pom.xml" />
       </set>
     </option>

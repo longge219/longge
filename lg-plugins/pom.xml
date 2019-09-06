@@ -3,20 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lg-cloud</artifactId>
+        <artifactId>longge</artifactId>
         <groupId>com.longge</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lg-cloud-business</artifactId>
+    <artifactId>lg-plugins</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lg-cloud-business-plugins</module>
-        <module>lg-cloud-business-web</module>
-        <module>lg-cloud-business-service</module>
-        <module>lg-cloud-business-authcenter</module>
-        <module>lg-cloud-business-common</module>
+        <module>lg-plugins-mysql</module>
+        <module>lg-plugins-es</module>
     </modules>
 
 

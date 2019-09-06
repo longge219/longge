@@ -9,12 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lgcloudbusinessauthcenter" />
         <module name="lg-flink-sink-es6" />
+        <module name="lg-plugins-mysql" />
         <module name="lgcloudbusinessservicebasic" />
         <module name="lg-cloud-business-plugins-es" />
         <module name="lg-flink-source-kafka" />
         <module name="lggathermqtt" />
         <module name="lg-cloud-business-web-basic" />
+        <module name="lg-cloud-business-common" />
         <module name="lgflinksinkes6" />
+        <module name="lg-plugins-es" />
         <module name="lgcloudbusinesspluginses" />
         <module name="lgcloudbusinesswebbasic" />
         <module name="lgflinktaskrtkcalculate" />
@@ -27,15 +30,16 @@
         <module name="lg-cloud-core" />
         <module name="lgflinksourcekafka" />
         <module name="lggathergnss" />
-        <module name="lgcloudcore" />
+        <module name="lg-gather-http" />
         <module name="lg-flink-task-rtkcalculate" />
         <module name="lg-cloud-business-authcenter" />
         <module name="lgcloudbusinesspluginsmybatis" />
-        <module name="lg-cloud-business-common" />
+        <module name="lgcloudcore" />
         <module name="lg-gather-mqtt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lg-cloud-business-plugins" target="1.8" />
       <module name="lgcloudbusinessutils" target="1.8" />
       <module name="lggatherrtcm" target="1.8" />
       <module name="lgsystem" target="1.5" />
