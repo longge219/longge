@@ -3,7 +3,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.longge.cloud.business.common.basic.model.BaseUser;
 import com.longge.cloud.business.common.basic.model.BaseUserRole;
 import com.longge.cloud.business.common.basic.service.BaseUserService;
-import com.longge.cloud.business.plugins.mybatis.service.impl.BaseServiceImpl;
+import com.longge.plugins.mysql.service.impl.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

@@ -3,7 +3,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.longge.business.service.basic.mapper.mapper.BaseRoleMapper;
 import com.longge.cloud.business.common.basic.model.BaseRole;
 import com.longge.cloud.business.common.basic.service.BaseRoleService;
-import com.longge.cloud.business.plugins.mybatis.service.impl.BaseServiceImpl;
+import com.longge.plugins.mysql.service.impl.BaseServiceImpl;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

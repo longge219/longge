@@ -1,5 +1,4 @@
 package com.longge.plugins.mysql.config.mapper;
-
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.mapperhelper.MapperHelper;
-
 import javax.annotation.PostConstruct;
 import java.util.List;
 

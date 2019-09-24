@@ -2,11 +2,10 @@ package com.longge.gather.mqtt.session;
 import com.longge.gather.mqtt.bean.SessionMessage;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
-
 /**
  * @description 会话消息缓存
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
 public class  SessionManager {
 

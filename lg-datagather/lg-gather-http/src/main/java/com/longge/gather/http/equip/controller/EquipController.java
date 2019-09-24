@@ -1,10 +1,15 @@
 package com.longge.gather.http.equip.controller;
+import com.longge.gather.http.equip.service.EquipmentService;
 import com.longge.gather.http.equip.vo.RequestVo;
 import com.longge.gather.http.equip.vo.ResponseVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class EquipController {
+
+    @Autowired
+    private EquipmentService equipmentServiceImpl;
 
     @PostMapping(value = "/register_de",produces="application/json")
     @ResponseBody public ResponseVo register(@RequestParam String register_code, @RequestBody RequestVo requestVo){

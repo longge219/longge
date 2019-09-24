@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @description 遗嘱消息处理
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public class WillService {
 

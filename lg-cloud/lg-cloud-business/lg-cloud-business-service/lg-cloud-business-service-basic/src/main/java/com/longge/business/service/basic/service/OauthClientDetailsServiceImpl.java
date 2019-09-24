@@ -2,7 +2,7 @@ package com.longge.business.service.basic.service;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.longge.cloud.business.common.basic.model.OauthClientDetails;
 import com.longge.cloud.business.common.basic.service.OauthClientDetailsService;
-import com.longge.cloud.business.plugins.mybatis.service.impl.BaseServiceImpl;
+import com.longge.plugins.mysql.service.impl.BaseServiceImpl;
 import org.springframework.stereotype.Component;
 
 

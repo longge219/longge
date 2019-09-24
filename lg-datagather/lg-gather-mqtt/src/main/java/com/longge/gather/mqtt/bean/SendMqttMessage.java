@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * @description MQTT消息
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 @Builder
 @Data

@@ -16,7 +16,7 @@ import io.netty.handler.codec.mqtt.*;
 /**
  * @description MQTT控制报文业务处理
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
 @Service("mqttHandlerServiceImpl")
 public class MqttHandlerServiceImpl implements MqttHandlerService {
@@ -25,9 +25,9 @@ public class MqttHandlerServiceImpl implements MqttHandlerService {
     private MqttChannelService mqttChannelServiceImpl;
     
     /**
-     * @description 收到登录控制报文处理
+     * @description 收到登录报文处理
      * @param channel 通道
-     * @param mqttConnectMessage 登录控制报文
+     * @param mqttConnectMessage 登录报文
      * @return 登录是否成功
      */
     @SuppressWarnings("incomplete-switch")
@@ -35,6 +35,7 @@ public class MqttHandlerServiceImpl implements MqttHandlerService {
     public boolean login(Channel channel, MqttConnectMessage mqttConnectMessage) {
     	//客户端全局ID
         String deviceId = mqttConnectMessage.payload().clientIdentifier();
+        //登录失败业务处理
         if (StringUtils.isBlank(deviceId)) {
             return false;
         }
@@ -56,7 +57,7 @@ public class MqttHandlerServiceImpl implements MqttHandlerService {
 
     }
     /**
-     * @description 收到断开连接控制报文处理
+     * @description 收到断开连接报文处理
      * @param channel 通道
      * @return void
      */

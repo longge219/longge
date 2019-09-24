@@ -1,9 +1,4 @@
 package com.longge.plugins.mysql.config.pagehelper;
-
-/**
- * Created by fp295 on 2018/4/7.
- */
-
 import com.github.pagehelper.PageInterceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
@@ -14,7 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Properties;

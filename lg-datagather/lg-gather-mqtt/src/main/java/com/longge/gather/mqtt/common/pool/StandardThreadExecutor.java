@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 优先扩充线程到maxThread，再offer到queue，如果满了就reject
  * 比较适合于业务处理需要远程资源的场景
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  */
 public class StandardThreadExecutor extends ThreadPoolExecutor {
 

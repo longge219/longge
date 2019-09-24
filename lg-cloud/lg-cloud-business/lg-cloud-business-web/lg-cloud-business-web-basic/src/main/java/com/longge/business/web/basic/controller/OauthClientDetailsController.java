@@ -7,7 +7,6 @@ import com.longge.cloud.business.common.basic.pojo.request.OauthClientDetailsReq
 import com.longge.cloud.business.common.basic.service.OauthClientDetailsService;
 import com.longge.cloud.business.common.pojo.ResponseData;
 import com.longge.cloud.business.common.pojo.TableData;
-import com.longge.cloud.business.plugins.mybatis.controller.CrudController;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

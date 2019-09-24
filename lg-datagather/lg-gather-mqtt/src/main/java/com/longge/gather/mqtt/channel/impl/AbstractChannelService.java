@@ -18,7 +18,7 @@ import java.util.concurrent.Executors;
 /**
  * @description channel业务处理
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public abstract class AbstractChannelService extends PublishApiSevice implements MqttChannelService, BaseApi {
 

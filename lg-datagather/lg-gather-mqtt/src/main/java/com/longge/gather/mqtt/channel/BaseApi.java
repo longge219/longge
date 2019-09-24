@@ -4,7 +4,7 @@ import java.util.function.Predicate;
 /**
  * @description 逻辑操作封装
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public interface BaseApi {
 

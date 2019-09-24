@@ -3,7 +3,7 @@ import io.netty.buffer.ByteBuf;
 /**
  *@description byteBuf 需要转换成byte[]
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public class ByteBufUtil {
     public  static byte[]  copyByteBuf(ByteBuf byteBuf){

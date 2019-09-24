@@ -6,7 +6,7 @@ import java.util.concurrent.RejectedExecutionException;
  * @description LinkedTransferQueue 能保证更高性能，相比与LinkedBlockingQueue有明显提升
  * 不过LinkedTransferQueue的缺点是没有队列长度控制，需要在外层协助控制。
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  * */
 public class ExecutorQueue extends LinkedTransferQueue<Runnable> {
     private static final long serialVersionUID = -265236426751004839L;

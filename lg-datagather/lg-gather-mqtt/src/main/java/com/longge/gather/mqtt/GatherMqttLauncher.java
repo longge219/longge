@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @description 工程启动类
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 @SpringBootApplication
 public class GatherMqttLauncher {

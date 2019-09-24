@@ -4,7 +4,7 @@ import io.netty.handler.codec.mqtt.*;
 /**
  * @description MQTT控制报文业务处理接口
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
 public interface MqttHandlerService{
 	

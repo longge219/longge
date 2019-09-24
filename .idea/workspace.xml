@@ -1,15 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3913ca1b-53fe-4560-aebc-c4548d427822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/target/classes/META-INF/lg-cloud-business-plugins-es.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/META-INF/lg-gather-http.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/com/longge/plugins/es/bean/EsModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/com/longge/plugins/es/bean/EsPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/com/longge/plugins/es/config/ElasticsearchConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/com/longge/plugins/es/controller/EsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/com/longge/plugins/es/utils/ElasticsearchUtil.class" afterDir="false" />
+    <list default="true" id="3913ca1b-53fe-4560-aebc-c4548d427822" name="Default Changelist" comment="同步更新">
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseModuleResources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseRoleModule.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/BaseUserRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/model/OauthClientDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/ResponseCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/request/BaseModuleResourcesRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/request/BaseRoleRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/request/BaseSystemRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/request/BaseUserRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/request/OauthClientDetailsRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/pojo/response/ModuleAndSystemResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseModuleResourceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseRoleModuleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseRoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseSystemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseUserRoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/BaseUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/basic/service/OauthClientDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/pojo/BaseRequestPojo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/pojo/MobileMsgTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/pojo/ResponseData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/pojo/TableData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/utils/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/utils/JsonUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/target/classes/com/longge/cloud/business/common/utils/UUID.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/BasicServiceLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseModuleResourcesMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseRoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseRoleModuleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseSystemMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/BaseUserRoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/mapper/mapper/OauthClientDetailsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseModuleResourceServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseRoleModuleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseRoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseSystemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseUserRoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/BaseUserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/classes/com/longge/business/service/basic/service/OauthClientDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/target/test-classes/ApplicationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/BasicWebLauncher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/BaseModuleResourceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/BaseRoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/BaseSystemController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/BaseUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/CrudController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/controller/OauthClientDetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/target/classes/com/longge/business/web/basic/swagger/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/model/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/model/EquipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/service/EquipmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/service/impl/EquipmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/mapper/EquipmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/model/Equipment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/model/EquipmentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/service/EquipmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/service/impl/EquipmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/mapper/EquipmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/PayloadDecode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/ProtocolHead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/SubAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/Bits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/BusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/META-INF/lg-gather-mqtt.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/TEST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducersConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ExecutorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/VisibleThreadPoolTaskExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/META-INF/lg-plugins-mysql.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/config/mapper/MapperConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/config/mapper/MapperProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/config/pagehelper/PageHelperAutoConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/config/pagehelper/PageHelperProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/service/BaseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/classes/com/longge/plugins/mysql/service/impl/BaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseModuleResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseModuleResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseRoleModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseRoleModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseSystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseUserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseUserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/BaseUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/OauthClientDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-common/src/main/java/com/longge/cloud/business/common/basic/service/OauthClientDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseModuleResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseModuleResourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseRoleModuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseRoleModuleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseSystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseUserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseUserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/BaseUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/OauthClientDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/java/com/longge/business/service/basic/service/OauthClientDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseModuleResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseModuleResourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseSystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseSystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/BaseUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/OauthClientDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/OauthClientDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/controller/EquipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/controller/EquipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/controller/EquipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/target/classes/com/longge/gather/http/equip/controller/EquipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/GatherMqttLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/GatherMqttLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/MqttChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/MqttChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/RetainMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/RetainMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SendMqttMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SendMqttMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SessionMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SessionMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/WillMeaasge.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/WillMeaasge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/BaseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/MqttChannelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/MqttChannelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/PublishApiSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/PublishApiSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/WillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/WillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/coder/ByteBufToWebSocketFrameEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/coder/WebSocketFrameToByteBufDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/DefaultThreadFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/DefaultThreadFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/ExecutorQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/ExecutorQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/StandardThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/StandardThreadExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteBufUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteBufUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/CacheMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/CacheMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/MessageId.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/MessageId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/SpringBeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/SpringBeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/AbstractBootstrapServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/AbstractBootstrapServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/NettyBootstrapServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/NettyBootstrapServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/MqttHandlerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/MqttHandlerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/session/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/session/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/RetainMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/bean/RetainMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/MqttChannelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/MqttChannelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/code/ByteBufToWebSocketFrameEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/code/WebSocketFrameToByteBufDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/util/CacheMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/MqttHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/AbstractBootstrapServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/AbstractBootstrapServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/server/NettyBootstrapServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/session/SessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/session/SessionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/mapper/MapperConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/mapper/MapperConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/controller/CrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic/src/main/java/com/longge/business/web/basic/controller/CrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/service/impl/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-plugins/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,6 +218,7 @@
     <ignored path="$PROJECT_DIR$/lg-plugins/target/" />
     <ignored path="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/target/" />
     <ignored path="$PROJECT_DIR$/lg-plugins/lg-plugins-es/target/" />
+    <ignored path="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +233,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="231">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/GatherHttpLauncher.java">
+        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="495">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="58" />
               <folding>
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,11 +284,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HttpServletResponse</find>
-      <find>KafkaProducerListener</find>
-      <find>JSONObject</find>
-      <find>visiblePool</find>
-      <find>acks</find>
       <find>com.longge.gather.gnss.common.protocal.rtcm32.msm.head</find>
       <find>com.longge.gather.gnss.common.protocal.rtcm32.msm.head.MsmHead</find>
       <find>mqttFixedHeader</find>
@@ -122,6 +309,11 @@
       <find>ORIGINALDATA</find>
       <find>receiverClockError</find>
       <find>jianglong</find>
+      <find>dev</find>
+      <find>BaseUserMapper</find>
+      <find>mqttFixedHeader1</find>
+      <find>getObjectByBytes</find>
+      <find>lenByNextLength</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -134,57 +326,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/SiteInfo.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/ServerHandlerService.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/Observations.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/PosCalculate.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_4.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_3.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_2.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_1.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_5.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_6.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/data/Msm_7.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1001.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1003.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1002.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/observation/gpsrtk/Observation_1004.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhBDInoutcInfo.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/wh/WhInoutcInfo.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObserverData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/Observations.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/Test.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanRunnable.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Coordinates.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/Time.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/scan/ScanScheduled.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/ObservationSet.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/model/SatellitePosition.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/model/EphemerisData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/service/impl/ServerHandlerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/gnss/calculate/SatPosCalculate.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/protocal/rtcm32/msm/constant/GpsSignal.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/invok/DllHelper.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/ci/calculate/ReceiverCalculateDll.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/GatherMqttLauncher.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/NavDataManager.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/src/main/java/com/longge/gather/gnss/server/single/ObsDataManager.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/GatherHttpLauncher.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/InitBean.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/pom.xml" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/vo/RequestVo.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/pom.xml" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/controller/EquipController.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/ExecutorQueue.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/pool/StandardThreadExecutor.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/MqttChannel.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/BaseApi.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/session/SessionManager.java" />
-        <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/pom.xml" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-es/pom.xml" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/mapper/MapperProperties.java" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/pom.xml" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/controller/EsController.java" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/utils/ElasticsearchUtil.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/MqttHandlerService.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/MqttChannelService.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/GatherMqttLauncher.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/fastjson/FastJsonSerializer.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonUtils.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonSerializer.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/AbstractBootstrapServer.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonDeserializer.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/RetainMessage.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SendMqttMessage.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/SessionMessage.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/WillMeaasge.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/BusinessService.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/MqttHandlerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteBufUtil.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/CacheMap.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IdWorker.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/IpUtils.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/MessageId.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/SpringBeanUtils.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/Bits.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassProcess.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/ProtocolHead.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassMap.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteUtil.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteConvert.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/BusinessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_4.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_3.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/PayloadDecode.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/WillService.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/PublishApiSevice.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonDeserializer.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonSerializer.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonUtils.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducersConfig.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/KafkaProducerService.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ExecutorConfig.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/VisibleThreadPoolTaskExecutor.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ThreadPoolConfig.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/pom.xml" />
       </list>
     </option>
   </component>
@@ -225,6 +417,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,70 +435,47 @@
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="longge" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="equip" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="longge" type="b2602c69:ProjectViewProjectNode" />
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="equip" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="longge" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-datagather" type="462c0819:PsiDirectoryNode" />
-              <item name="lg-gather-http" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-gather-mqtt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -315,36 +485,41 @@
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-plugins" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-plugins-kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559295040010" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.longge.gather.http" />
-      <recent name="com.longge.gather.gnss.server.model" />
-      <recent name="com.longge.gather.gnss.server.single" />
-      <recent name="com.longge.gather.gnss.server.start" />
-      <recent name="com.longge.gather.gnss.app" />
+      <recent name="com.longge.plugins.kafka.producer.impl" />
+      <recent name="com.longge.plugins.kafka.producer" />
+      <recent name="com.longge.gather.mqtt.code.protocol" />
+      <recent name="com.longge.gather.http.equip.service.impl" />
+      <recent name="com.longge.gather.http.equip.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-mysql\src\main\java\com\longge\plugins\mysql" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-es\src\main\java\com\longge\plugins\es" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-es\src\main\resources" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-http\src\main\java\com\longge\gather\http\config" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-http\src\main\resources" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-kafka\src\main\java\com\longge\plugins\kafka\threadpool" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-kafka\src\main\java\com\longge\plugins\kafka\config" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-plugins\lg-plugins-kafka\src\main\java\com\longge\plugins\kafka\fastjson" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-mqtt\src\main\java\com\longge\gather\mqtt\code\protocol" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-mqtt\src\main\java\com\longge\gather\mqtt\code\reflect" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,7 +534,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GatherHttpLauncher">
+  <component name="RunManager" selected="Application.GatherMqttLauncher">
     <configuration name="GatherGnssLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.longge.gather.gnss.GatherGnssLauncher" />
       <module name="lggathergnss" />
@@ -427,8 +602,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GatherHttpLauncher" />
         <item itemvalue="Application.GatherMqttLauncher" />
+        <item itemvalue="Application.GatherHttpLauncher" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.GatherGnssLauncher" />
@@ -530,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567748760839</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="同步更新">
+      <created>1567749717496</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567749717496</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -546,7 +728,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944505" weight="0.33583692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944505" visible="true" weight="0.27896994" />
       <window_info id="Structure" order="1" sideWeight="0.5005549" side_tool="true" weight="0.33583692" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -556,8 +738,8 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.31853497" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946353" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731758" weight="0.44617093" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49892703" weight="0.49500555" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731758" weight="0.41065484" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49892703" weight="0.2164262" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946353" weight="0.32852387" />
@@ -575,36 +757,6 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven" order="7" weight="0.32939914" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944505" visible="true" weight="0.33583692" />
-      <window_info id="Structure" order="1" sideWeight="0.5005549" side_tool="true" weight="0.33583692" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.31853497" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946353" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731758" weight="0.44617093" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49892703" weight="0.49500555" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946353" weight="0.32852387" />
-      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.3293011" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49839056" weight="0.32741398" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026824" side_tool="true" weight="0.27857935" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49892703" weight="0.2408435" />
-      <window_info anchor="bottom" id="Problems" order="12" sideWeight="0.49946353" weight="0.32852387" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.32939914" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -664,23 +816,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/NettyBootstrapServer.java</url>
-          <line>56</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java</url>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/NettyBootstrapServer.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -690,148 +830,189 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/coder/ByteBufToWebSocketFrameEncoder.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/reflect/ClassProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="348">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/coder/WebSocketFrameToByteBufDecoder.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteBufUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="264">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/bean/InitBean.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteUtil.java" />
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/Bits.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="289">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+          <folding>
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3738#3739#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/util/ByteConvert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="199">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="37" />
+          <folding>
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/KafkaSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/ProtocolHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="24" column="98" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/protocol/Payload_3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/BusinessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/BaseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/MqttChannelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/WillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/PublishApiSevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/PayloadDecode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="29" />
+        <state relative-caret-position="384">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/server/NettyBootstrapServer.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="224">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="462">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss/pom.xml">
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="315">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/pom.xml">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.11.RELEASE/spring-webmvc-5.0.11.RELEASE.jar!/org/springframework/web/servlet/config/annotation/PathMatchConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar!/com/alibaba/fastjson/support/config/FastJsonConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2197">
-          <caret line="90" column="48" lean-forward="true" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/config/WebMvcConfig.java" />
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/logback-spring.xml" />
-    <entry file="jar://$PROJECT_DIR$/../../../java/JDK1.8/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.11.RELEASE/spring-web-5.0.11.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/vo/RequestVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/equip/controller/EquipController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../java/JDK1.8/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1585" column="13" selection-start-line="1585" selection-start-column="13" selection-end-line="1585" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/session/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6495">
+          <caret line="224" column="16" selection-start-line="224" selection-start-column="8" selection-end-line="224" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/GatherMqttLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="33">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
           <folding>
             <element signature="e#327#328#0" expanded="true" />
             <element signature="e#396#397#0" expanded="true" />
@@ -839,214 +1020,227 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/config/mapper/MapperProperties.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/service/KafkaProducerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="297">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/config/pagehelper/PageHelperProperties.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="711">
+          <caret line="43" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="43" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/config/pagehelper/PageHelperAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter/src/main/java/com/longge/cloud/business/authcenter/vo/ValidateCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.4.2/mapper-3.4.2.jar!/tk/mybatis/mapper/common/base/select/SelectAllMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/controller/CrudController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.4.2/mapper-3.4.2.jar!/tk/mybatis/mapper/entity/Example.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/service/impl/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="150" column="41" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/src/main/java/com/longge/cloud/business/plugins/mybatis/config/mapper/MapperConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-es/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="13" selection-start-line="13" selection-end-line="67" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/lg-cloud-business-plugins-mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="51" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/mapper/MapperConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="579">
+          <caret line="33" column="5" selection-start-line="31" selection-start-column="31" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/mapper/MapperProperties.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/service/impl/KafkaProducerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="407">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/threadpool/VisibleThreadPoolTaskExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/config/pagehelper/PageHelperProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/controller/CrudController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/src/main/java/com/longge/plugins/mysql/service/impl/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/controller/EsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="233" column="18" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/bean/EsModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="297">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/bean/EsPage.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/threadpool/ThreadPoolConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="84">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/config/ElasticsearchConfig.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/threadpool/ExecutorConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es/src/main/java/com/longge/plugins/es/utils/ElasticsearchUtil.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="227" column="29" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="29" />
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1089" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/TEST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="33" column="5" selection-start-line="23" selection-start-column="53" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/java/com/longge/gather/http/GatherHttpLauncher.java">
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="231">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-990">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/producer/KafkaProducersConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="-345">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka/src/main/java/com/longge/gather/kafka/producer/KafkaProducerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducersConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/KafkaProducerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/VisibleThreadPoolTaskExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ThreadPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../java/JDK1.8/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/threadpool/ExecutorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.2.4.RELEASE/spring-kafka-2.2.4.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="88" column="46" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1102,7 +1296,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>lg-flink-sink</last-edited>
+          <last-edited>lg-cloud-business-authcenter</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -11,7 +11,7 @@ import io.netty.handler.codec.mqtt.*;
 /**
  * @description 收到发布消息后返回业务处理
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public class PublishApiSevice {
 

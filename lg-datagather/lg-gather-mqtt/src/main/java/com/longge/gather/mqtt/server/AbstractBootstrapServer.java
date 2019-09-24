@@ -1,14 +1,9 @@
 package com.longge.gather.mqtt.server;
 import com.longge.gather.mqtt.bean.InitBean;
-import com.longge.gather.mqtt.coder.ByteBufToWebSocketFrameEncoder;
-import com.longge.gather.mqtt.coder.WebSocketFrameToByteBufDecoder;
 import com.longge.gather.mqtt.common.ssl.SecureSocketSslContextFactory;
 import com.longge.gather.mqtt.common.util.SpringBeanUtils;
 import com.longge.gather.mqtt.handler.MqttHandler;
 import io.netty.channel.ChannelPipeline;
-import io.netty.handler.codec.http.HttpObjectAggregator;
-import io.netty.handler.codec.http.HttpServerCodec;
-import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.mqtt.MqttDecoder;
 import io.netty.handler.codec.mqtt.MqttEncoder;
 import io.netty.handler.ssl.SslHandler;
@@ -22,7 +17,7 @@ import java.security.KeyStore;
 /**
  * @description 抽象类 负责加载--编解码器---业务处理器
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public abstract class AbstractBootstrapServer implements BootstrapServer {
     /**
@@ -52,24 +47,6 @@ public abstract class AbstractBootstrapServer implements BootstrapServer {
                     case "MQTT":
                         channelPipeline.addLast("encoder", MqttEncoder.INSTANCE);
                         channelPipeline.addLast("decoder", new MqttDecoder());
-                        break;
-                    case "MQTT_WS_MQTT":
-                        channelPipeline.addLast("httpCode", new HttpServerCodec());
-                        channelPipeline.addLast("aggregator", new HttpObjectAggregator(65536));
-                        channelPipeline.addLast("webSocketHandler", new WebSocketServerProtocolHandler("/", "mqtt, mqttv3.1, mqttv3.1.1"));
-                        channelPipeline.addLast("wsDecoder", new WebSocketFrameToByteBufDecoder());
-                        channelPipeline.addLast("wsEncoder", new ByteBufToWebSocketFrameEncoder());
-                        channelPipeline.addLast("decoder", new MqttDecoder());
-                        channelPipeline.addLast("encoder", MqttEncoder.INSTANCE);
-                        break;
-                    case "MQTT_WS_PAHO":
-                        channelPipeline.addLast("httpCode", new HttpServerCodec());
-                        channelPipeline.addLast("aggregator", new HttpObjectAggregator(65536));
-                        channelPipeline.addLast("webSocketHandler",new WebSocketServerProtocolHandler("/mqtt", "mqtt, mqttv3.1, mqttv3.1.1"));
-                        channelPipeline.addLast("wsDecoder", new WebSocketFrameToByteBufDecoder());
-                        channelPipeline.addLast("wsEncoder", new ByteBufToWebSocketFrameEncoder());
-                        channelPipeline.addLast("decoder", new MqttDecoder());
-                        channelPipeline.addLast("encoder", MqttEncoder.INSTANCE);
                         break;
                 }
     }

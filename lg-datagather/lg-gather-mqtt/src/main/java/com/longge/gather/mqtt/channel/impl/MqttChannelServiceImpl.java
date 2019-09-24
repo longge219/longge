@@ -6,11 +6,13 @@ import com.longge.gather.mqtt.common.enums.SubStatus;
 import com.longge.gather.mqtt.common.exception.ConnectionException;
 import com.longge.gather.mqtt.common.util.ByteBufUtil;
 import com.longge.gather.mqtt.scan.ScanRunnable;
+import com.longge.gather.mqtt.service.BusinessService;
 import com.longge.gather.mqtt.session.SessionManager;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 import io.netty.handler.codec.mqtt.*;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import java.util.Collection;
@@ -26,7 +28,7 @@ import static io.netty.handler.codec.mqtt.MqttQoS.EXACTLY_ONCE;
 /**
  * @description MQTT控制报文channel处理
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
 @Component("mqttChannelServiceImpl")
 public class MqttChannelServiceImpl extends AbstractChannelService{
@@ -35,11 +37,30 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
     
     private SessionManager sessionManager = new SessionManager();
 
+    @Autowired
+    private BusinessService businessServiceImpl;
+
     public MqttChannelServiceImpl(ScanRunnable scanRunnable) {
         super(scanRunnable);
     }
+
     /**
-     *@description:登录控制报文channel业务处理
+     *@description:登录失败channel业务处理
+     *@param channel  通道
+     *@param deviceId 客户端全局ID
+     *@param mqttConnectMessage 登录控制报文
+     *@param mqttConnectReturnCode 登录失败返回码
+     *@return void
+     */
+    public void loginFail(Channel channel, String deviceId, MqttConnectMessage mqttConnectMessage, MqttConnectReturnCode mqttConnectReturnCode){
+        MqttFixedHeader mqttConnectFixedHeader = mqttConnectMessage.fixedHeader();//固定报头
+        MqttConnAckVariableHeader mqttConnAckVariableHeader = new MqttConnAckVariableHeader(mqttConnectReturnCode, true);//可变报文头
+        MqttFixedHeader mqttFixedHeader = new MqttFixedHeader(MqttMessageType.CONNACK, mqttConnectFixedHeader.isDup(), MqttQoS.AT_MOST_ONCE, mqttConnectFixedHeader.isRetain(), 0x02);
+        MqttConnAckMessage connAck = new MqttConnAckMessage(mqttFixedHeader, mqttConnAckVariableHeader);
+        channel.writeAndFlush(connAck);
+    }
+    /**
+     *@description:登录成功channel业务处理
      *@param channel  通道
      *@param deviceId 客户端全局ID
      *@param mqttConnectMessage 登录控制报文
@@ -53,7 +74,7 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
         channel.attr(_deviceId).set(deviceId);
         /**启用线程处理登录业务操作*/
         executorService.execute(() -> {
-            MqttFixedHeader mqttFixedHeader1 = mqttConnectMessage.fixedHeader();//固定报头
+            MqttFixedHeader mqttConnectFixedHeader = mqttConnectMessage.fixedHeader();//固定报头
             MqttConnectVariableHeader mqttConnectVariableHeader = mqttConnectMessage.variableHeader();//可变报头
             final MqttConnectPayload payload = mqttConnectMessage.payload();//有效载荷
             /**封装一个自己的channel(缓存在全局变量中)*/
@@ -104,18 +125,17 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
                 		,mqttConnectVariableHeader1 -> {
 		                	MqttConnectReturnCode connectReturnCode = MqttConnectReturnCode.CONNECTION_ACCEPTED;
 		                    MqttConnAckVariableHeader mqttConnAckVariableHeader = new MqttConnAckVariableHeader(connectReturnCode, false);
-		                    MqttFixedHeader mqttFixedHeader = new MqttFixedHeader(MqttMessageType.CONNACK, mqttFixedHeader1.isDup(), MqttQoS.AT_MOST_ONCE, mqttFixedHeader1.isRetain(), 0x02);
+		                    MqttFixedHeader mqttFixedHeader = new MqttFixedHeader(MqttMessageType.CONNACK, mqttConnectFixedHeader.isDup(), MqttQoS.AT_MOST_ONCE, mqttConnectFixedHeader.isRetain(), 0x02);
 		                    MqttConnAckMessage connAck = new MqttConnAckMessage(mqttFixedHeader, mqttConnAckVariableHeader);
 		                    channel.writeAndFlush(connAck);
 		                    }
                 	   ,mqttConnectVariableHeader1 -> {
 		                    MqttConnectReturnCode connectReturnCode = MqttConnectReturnCode.CONNECTION_ACCEPTED;
 		                    MqttConnAckVariableHeader mqttConnAckVariableHeader = new MqttConnAckVariableHeader(connectReturnCode, true);
-		                    MqttFixedHeader mqttFixedHeader = new MqttFixedHeader(MqttMessageType.CONNACK, mqttFixedHeader1.isDup(), MqttQoS.AT_MOST_ONCE, mqttFixedHeader1.isRetain(), 0x02);
+		                    MqttFixedHeader mqttFixedHeader = new MqttFixedHeader(MqttMessageType.CONNACK, mqttConnectFixedHeader.isDup(), MqttQoS.AT_MOST_ONCE, mqttConnectFixedHeader.isRetain(), 0x02);
 		                    MqttConnAckMessage connAck = new MqttConnAckMessage(mqttFixedHeader, mqttConnAckVariableHeader);
 		                    channel.writeAndFlush(connAck);
-
-                }); 
+                });
                 /**发送session缓存消息*/ 
                 ConcurrentLinkedQueue<SessionMessage> sessionMessages = sessionManager.getByteBuf(payload.clientIdentifier());
                 doIfElse(sessionMessages
@@ -246,10 +266,14 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
         MqttPublishVariableHeader mqttPublishVariableHeader = mqttPublishMessage.variableHeader();
         MqttChannel mqttChannel = getMqttChannel(getDeviceId(channel));
         ByteBuf payload = mqttPublishMessage.payload();
-        byte[] bytes = ByteBufUtil.copyByteBuf(payload); //
+        byte[] bytes = ByteBufUtil.copyByteBuf(payload);
+        String topic = mqttPublishVariableHeader.topicName();
         int messageId = mqttPublishVariableHeader.packetId();
+        /**业务处理*/
         executorService.execute(() -> {
+             //已登录连接存在
             if (channel.hasAttr(_login) && mqttChannel != null) {
+                //根据消息等级回复
                 switch (mqttFixedHeader.qosLevel()) {
                     case AT_MOST_ONCE: 
                         break;
@@ -280,6 +304,8 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
                                     .qoS(mqttFixedHeader.qosLevel())
                                     .build(), true);
                 }
+                //消息解码业务处理
+                businessServiceImpl.doPublishPacket(topic,bytes);
             }
         });
 
@@ -368,7 +394,7 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
                                     sendQosConfirmMsg(MqttQoS.AT_LEAST_ONCE,subChannel,topic,bytes);
                                     break;
                                 case AT_MOST_ONCE:
-                                    sendQos0Msg(subChannel.getChannel(),topic,bytes);
+                                    //sendQos0Msg(subChannel.getChannel(),topic,bytes);
                                     break;
                                 case EXACTLY_ONCE:
                                     sendQosConfirmMsg(EXACTLY_ONCE,subChannel,topic,bytes);

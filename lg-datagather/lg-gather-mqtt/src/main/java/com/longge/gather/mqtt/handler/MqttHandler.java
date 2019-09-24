@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 /**
  * @description MQTT处理
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 @ChannelHandler.Sharable
 @Component
@@ -77,17 +77,19 @@ public class MqttHandler extends SimpleChannelInboundHandler<MqttMessage> {
     private void doMessage(ChannelHandlerContext channelHandlerContext, MqttMessage mqttMessage) {
         Channel channel = channelHandlerContext.channel();
         MqttFixedHeader mqttFixedHeader = mqttMessage.fixedHeader();
+        //登录控制报文业务处理
         if(mqttFixedHeader.messageType().equals(MqttMessageType.CONNECT)){
             if(!mqttHandlerServiceImpl.login(channel, (MqttConnectMessage) mqttMessage)){
                 channel.close();
             }
             return ;
         }
-        //第一个报文不是登录(CONNECT)控制报文
+        //未登录--控制报文处理
         if (StringUtils.isBlank(mqttChannelServiceImpl.getDeviceId(channel))) {
         	channel.close();
         	return;
         }
+        //登录后--控制报文处理
         if(mqttChannelServiceImpl.getMqttChannel(mqttChannelServiceImpl.getDeviceId(channel)).isLogin()){
             switch (mqttFixedHeader.messageType()){
 	            case DISCONNECT:

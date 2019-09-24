@@ -1,13 +1,11 @@
 package com.longge.plugins.mysql.service.impl;
-
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.longge.cloud.business.plugins.mybatis.service.BaseService;
+import com.longge.plugins.mysql.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.entity.Example;
-
 import java.util.List;
 
 public class BaseServiceImpl<T> implements BaseService<T> {

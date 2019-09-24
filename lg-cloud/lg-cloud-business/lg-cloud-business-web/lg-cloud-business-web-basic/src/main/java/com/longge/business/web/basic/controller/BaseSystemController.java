@@ -1,5 +1,4 @@
 package com.longge.business.web.basic.controller;
-
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.github.pagehelper.PageInfo;
 import com.longge.cloud.business.common.basic.model.BaseSystem;
@@ -10,13 +9,11 @@ import com.longge.cloud.business.common.basic.service.BaseSystemService;
 import com.longge.cloud.business.common.pojo.ResponseData;
 import com.longge.cloud.business.common.pojo.TableData;
 import com.longge.cloud.business.common.utils.UUID;
-import com.longge.cloud.business.plugins.mybatis.controller.CrudController;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import tk.mybatis.mapper.entity.Example;
-
 import java.util.Date;
 import java.util.List;
 

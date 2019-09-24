@@ -3,15 +3,19 @@ import com.longge.gather.mqtt.bean.MqttChannel;
 import com.longge.gather.mqtt.bean.WillMeaasge;
 import io.netty.channel.Channel;
 import io.netty.handler.codec.mqtt.MqttConnectMessage;
+import io.netty.handler.codec.mqtt.MqttConnectReturnCode;
 import io.netty.handler.codec.mqtt.MqttPublishMessage;
 import java.util.List;
 import java.util.Set;
 /**
  * @description MQTT控制报文channel处理
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
-public interface MqttChannelService {    
+public interface MqttChannelService {
+
+    /**登录失败*/
+    public void loginFail(Channel channel, String deviceId, MqttConnectMessage mqttConnectMessage, MqttConnectReturnCode mqttConnectReturnCode);
     
     /**成功登陆*/
     public void loginSuccess(Channel channel, String deviceId, MqttConnectMessage mqttConnectMessage);

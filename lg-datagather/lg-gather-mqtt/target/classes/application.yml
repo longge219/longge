@@ -30,20 +30,15 @@ logging:
 # spring 集成kafka配置
 spring:
   kafka:
-    #    生产者
     producer:
-      #  表示所有broker都确认接收成功
-      acks: all
+      acks: all #表示所有broker都确认接收成功
       retries: 0
-      #      批处理大小
-      batch-size: 16384
+      batch-size: 16384   # 批处理大小
       buffer-memory: 33554432
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      #      延迟发送时间
-      linger: 5
-      #  配置sasl安全机制
-      properties:
+      linger: 5 #延迟发送时间
+      properties:  #配置sasl安全机制
         sasl.mechanism:  # PLAIN
         security.protocol: #  SASL_PLAINTEXT
         sasl.jaas.config: #  org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";

@@ -5,7 +5,7 @@ import java.net.NetworkInterface;
 /**
  * @description 全局id生成器
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 public class IdWorker {
 

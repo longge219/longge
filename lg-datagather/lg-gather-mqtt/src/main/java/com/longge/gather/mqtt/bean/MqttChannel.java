@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @description 封装类
  * @author jianglong
- * @create 2019-03-01
+ * @create 2019-09-09
  **/
 @Builder
 @Getter

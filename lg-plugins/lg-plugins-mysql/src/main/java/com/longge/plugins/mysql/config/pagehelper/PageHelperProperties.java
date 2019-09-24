@@ -1,9 +1,6 @@
 package com.longge.plugins.mysql.config.pagehelper;
-
 import org.springframework.boot.context.properties.ConfigurationProperties;
-
 import java.util.Properties;
-
 /**
  * Created by fp295 on 2018/4/7.
  */

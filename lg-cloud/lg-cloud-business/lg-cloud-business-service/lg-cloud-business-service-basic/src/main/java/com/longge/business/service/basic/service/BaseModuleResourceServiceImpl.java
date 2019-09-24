@@ -2,8 +2,8 @@ package com.longge.business.service.basic.service;
 import com.longge.business.service.basic.mapper.mapper.BaseModuleResourcesMapper;
 import com.longge.cloud.business.common.basic.model.BaseModuleResources;
 import com.longge.cloud.business.common.basic.service.BaseModuleResourceService;
-import com.longge.cloud.business.plugins.mybatis.service.impl.BaseServiceImpl;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.longge.plugins.mysql.service.impl.BaseServiceImpl;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -17,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * @description netty服务启动类--主类
  * @author jianglong
- * @create 2018-01-23
+ * @create 2019-09-09
  **/
 public class NettyBootstrapServer extends AbstractBootstrapServer {
 
