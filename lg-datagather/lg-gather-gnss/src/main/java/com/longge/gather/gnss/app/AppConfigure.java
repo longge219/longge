@@ -2,7 +2,7 @@ package com.longge.gather.gnss.app;
 import com.longge.gather.gnss.scan.ScanRunnable;
 import com.longge.gather.gnss.scan.ScanScheduled;
 import com.longge.gather.gnss.server.start.InitServer;
-import com.longge.gather.kafka.service.KafkaProducerService;
+import com.longge.plugins.kafka.producer.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

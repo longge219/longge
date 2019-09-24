@@ -1,7 +1,7 @@
 package com.longge.gather.gnss.scan;
 import com.longge.gather.gnss.ci.model.OriginalData;
 import com.longge.gather.gnss.server.model.Observations;
-import com.longge.gather.kafka.service.KafkaProducerService;
+import com.longge.plugins.kafka.producer.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @description 扫描处理观测数据
