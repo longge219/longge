@@ -11,6 +11,8 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.nio.charset.Charset;
 import java.util.Arrays;
+import java.util.Objects;
+
 /**
  * @description 报文体解码
  * @author jianglong
@@ -25,18 +27,8 @@ public class PayloadDecode {
     //反射工具类
     private static ClassProcess classProcess  = new ClassProcess();
 
-    public void decode(byte[] payload) throws Exception{
-        ProtocolHead protocolHead =  (ProtocolHead)dodecode(payload);
-        if(protocolHead != null){
-            if(protocolHead instanceof Payload_3){
-                Payload_3 payload_3 = (Payload_3) protocolHead;
-            }else if(protocolHead instanceof Payload_4){
-                Payload_4 payload_4 = (Payload_4) protocolHead;
-            }else{
-
-            }
-        }
-
+    public ProtocolHead decode(byte[] payload) throws Exception{
+        return (ProtocolHead)dodecode(payload);
     }
 
      /**解码*/
@@ -86,7 +78,6 @@ public class PayloadDecode {
             if (mark.equals("nextLength")) {
                 byte[] nextLengthBytes = Arrays.copyOfRange(payload, startPos, startPos+len);
                 nextLength = ByteConvert.bytesToShortS(nextLengthBytes);
-                System.out.println("JSON字符串长度.................." + nextLength);
             }
             return nextLength;
         } else if (type.equalsIgnoreCase("json")) {

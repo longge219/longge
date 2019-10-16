@@ -1,10 +1,15 @@
 package com.longge.gather.http.equip.controller;
+import com.longge.gather.http.equip.model.XcnetEquipmentInfo;
 import com.longge.gather.http.equip.service.EquipmentService;
 import com.longge.gather.http.equip.vo.RequestVo;
 import com.longge.gather.http.equip.vo.ResponseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+/**
+ * @description 设备信息管理
+ * @author jianglong
+ * @create 2019-09-29
+ **/
 @RestController
 public class EquipController {
 
@@ -14,10 +19,9 @@ public class EquipController {
     @PostMapping(value = "/register_de",produces="application/json")
     @ResponseBody public ResponseVo register(@RequestParam String register_code, @RequestBody RequestVo requestVo){
         System.out.println("注册");
-        System.out.println(register_code);
-        System.out.println(requestVo.getMac());
-        System.out.println(requestVo.getSn());
-        System.out.println(requestVo.getTitle());
+        XcnetEquipmentInfo xcnetEquipmentInfo = new XcnetEquipmentInfo();
+        xcnetEquipmentInfo.setEquipCode(requestVo.getSn());
+        xcnetEquipmentInfo = equipmentServiceImpl.selectOne(xcnetEquipmentInfo);
         return  new ResponseVo();
     }
 
@@ -28,4 +32,6 @@ public class EquipController {
         System.out.println("注册");
         return  new ResponseVo();
     }
+
+
 }

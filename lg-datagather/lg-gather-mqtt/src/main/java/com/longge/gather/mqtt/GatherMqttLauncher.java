@@ -6,9 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author jianglong
  * @create 2019-09-09
  **/
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.longge"})
 public class GatherMqttLauncher {
-
     public static void main(String[] args) {
         SpringApplication.run(GatherMqttLauncher.class, args);
     }

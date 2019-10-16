@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.longge.gather.http.project.dao.XcnetProjectDao" >
+  <resultMap id="BaseResultMap" type="com.longge.gather.http.project.model.XcnetProjectInfo" >
+    <id column="projectcode" property="projectCode" jdbcType="VARCHAR" />
+    <result column="projectname" property="projectName" jdbcType="VARCHAR" />
+    <result column="projectindustry" property="projectIndustry" jdbcType="VARCHAR" />
+    <result column="networkingway" property="networkingWay" jdbcType="TINYINT" />
+    <result column="projectintroduce" property="projectIntroduce" jdbcType="VARCHAR" />
+    <result column="operating" property="operating" jdbcType="TINYINT" />
+    <result column="operator" property="operator" jdbcType="TINYINT" />
+    <result column="equipaccessprotocol" property="equipAccessProtocol" jdbcType="TINYINT" />
+    <result column="equipregistrationcode" property="equipregistrationCode" jdbcType="VARCHAR" />
+    <result column="masterkey" property="masterKey" jdbcType="TINYINT" />
+  </resultMap>
+</mapper>

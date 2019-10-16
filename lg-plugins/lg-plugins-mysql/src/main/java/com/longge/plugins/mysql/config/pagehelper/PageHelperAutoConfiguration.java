@@ -12,10 +12,11 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Properties;
-
 /**
- * 自定注入分页插件
- */
+ * @description 自定注入分页插件
+ * @author jianglong
+ * @create 2019-09-24
+ **/
 @Configuration
 @ConditionalOnBean(SqlSessionFactory.class)
 @EnableConfigurationProperties(PageHelperProperties.class)
@@ -30,8 +31,6 @@ public class PageHelperAutoConfiguration {
 
     /**
      * 接受分页插件额外的属性
-     *
-     * @return
      */
     @Bean
     @ConfigurationProperties(prefix = PageHelperProperties.PAGEHELPER_PREFIX)

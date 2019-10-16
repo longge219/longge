@@ -1,21 +1,17 @@
 package com.longge.plugins.kafka.config;
 import org.apache.kafka.clients.producer.RecordMetadata;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.kafka.support.ProducerListener;
 import java.util.concurrent.BlockingQueue;
 /**
  * @author: jianglong
- * @description: kafka生产者消费监听器
+ * @description: kafka生产者监听器
  * @date: 2019-09-24
  */
 public class KafkaProducerListener implements ProducerListener<String, String> {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducerListener.class);
+    private final BlockingQueue<String> blockingDeque; //生产消息队列
 
-    private final BlockingQueue<String> blockingDeque;
-
-    private final Boolean visibleLog;
+    private final Boolean visibleLog; //是否可见日志
 
     public KafkaProducerListener(BlockingQueue<String> blockingDeque, Boolean visibleLog) {
         this.blockingDeque = blockingDeque;
@@ -29,17 +25,17 @@ public class KafkaProducerListener implements ProducerListener<String, String> {
         return blockingDeque;
     }
 
+    /**生产消息成功*/
     @Override
     public void onSuccess(String topic, Integer partition, String key, String value, RecordMetadata recordMetadata) {
         blockingDeque.add(value);
         if (visibleLog) {
-            LOGGER.info("kafka生产者key:" + key + " kafka消费者value:" + value);
+        //LOGGER.info("kafka生产者key:" + key + " kafka消费者value:" + value);
         }
     }
-
+    /**生产消息失败*/
     @Override
     public void onError(String topic, Integer partition, String key, String value, Exception exception) {
-        LOGGER.error("message:" + value + "failed");
         exception.printStackTrace();
     }
 

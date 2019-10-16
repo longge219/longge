@@ -58,10 +58,18 @@ spring:
       allow_unquoted_control_chars: true
       #允许出现单引号
       allow_single_quotes: true
+
+# mybatis 配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+# mapper 配置
+mapper:
+  identity: select uuid()
+  before: true
 ---
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://10.30.0.160:3306/xcnet?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://10.30.0.160:3306/xcnet?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
     username: root
     password: 123456

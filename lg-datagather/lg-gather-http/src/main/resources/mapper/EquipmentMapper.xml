@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.longge.gather.http.equip.model.EquipmentMapper" >
-  <resultMap id="BaseResultMap" type="com.longge.gather.http.equip.model.Equipment" >
-    <id column="id" property="id" jdbcType="VARCHAR" />
-    <result column="equipsn" property="equipSn" jdbcType="VARCHAR" />
-    <result column="registercode" property="registerCode" jdbcType="VARCHAR" />
-  </resultMap>
-</mapper>

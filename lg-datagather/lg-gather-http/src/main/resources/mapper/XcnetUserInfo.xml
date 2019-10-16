@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.longge.gather.http.user.dao.XcnetUserInfoDao" >
+  <resultMap id="BaseResultMap" type="com.longge.gather.http.user.model.XcnetUserInfo" >
+    <id column="usercode" property="userCode" jdbcType="VARCHAR" />
+    <result column="cellphone" property="cellphone" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="usertype" property="userType" jdbcType="TINYINT" />
+    <result column="verifstatus" property="verifStatus" jdbcType="TINYINT" />
+    <result column="registerdate" property="registerDate" jdbcType="TIMESTAMP" />
+    <result column="verifysubmitdate" property="verifySubmitDate" jdbcType="TIMESTAMP" />
+    <result column="verifydate" property="verifyDate" jdbcType="TIMESTAMP" />
+    <result column="cancellationstatus" property="cancellationStatus" jdbcType="TINYINT" />
+    <result column="cancellationdate" property="cancellationDate" jdbcType="TIMESTAMP" />
+    <result column="provincecode" property="provinceCode" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="industrycode" property="industryCode" jdbcType="VARCHAR" />
+    <result column="corporationname" property="corporationName" jdbcType="VARCHAR" />
+    <result column="businesslicensefront" property="businesslicenseFront" jdbcType="VARCHAR" />
+    <result column="businesslicenseback" property="businesslicenseBack" jdbcType="VARCHAR" />
+    <result column="failurereason" property="failureReason" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

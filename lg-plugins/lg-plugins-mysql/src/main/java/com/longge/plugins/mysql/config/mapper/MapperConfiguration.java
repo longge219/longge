@@ -11,10 +11,11 @@ import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.mapperhelper.MapperHelper;
 import javax.annotation.PostConstruct;
 import java.util.List;
-
 /**
- * Created by fp295 on 2018/4/7.
- */
+ * @description 映射配置
+ * @author jianglong
+ * @create 2019-09-24
+ **/
 @Configuration
 @ConditionalOnBean(SqlSessionFactory.class)
 @EnableConfigurationProperties(MapperProperties.class)

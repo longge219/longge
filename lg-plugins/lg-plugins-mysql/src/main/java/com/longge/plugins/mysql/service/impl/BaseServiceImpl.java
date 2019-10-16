@@ -7,7 +7,11 @@ import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.entity.Example;
 import java.util.List;
-
+/**
+ * @description 基础方法实现封装
+ * @author jianglong
+ * @create 2019-09-24
+ **/
 public class BaseServiceImpl<T> implements BaseService<T> {
 
     @Autowired

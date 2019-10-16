@@ -1,10 +1,12 @@
 package com.longge.plugins.mysql.service;
-
 import com.github.pagehelper.PageInfo;
 import tk.mybatis.mapper.entity.Example;
-
 import java.util.List;
-
+/**
+ * @description 基础方法接口封装
+ * @author jianglong
+ * @create 2019-09-24
+ **/
 public interface BaseService<T> {
 
     /**查询所有*/

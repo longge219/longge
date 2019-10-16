@@ -32,12 +32,13 @@
             <artifactId>pagehelper</artifactId>
             <version>5.0.3</version>
         </dependency>
-        <!-- 通用 Mapper -->
+        <!-- Mapper -->
         <dependency>
             <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-            <version>3.4.2</version>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.1.5</version>
         </dependency>
+
     </dependencies>
 
 

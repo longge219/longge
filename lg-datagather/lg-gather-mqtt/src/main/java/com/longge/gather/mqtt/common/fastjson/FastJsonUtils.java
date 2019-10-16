@@ -1,8 +1,7 @@
 package com.longge.gather.mqtt.common.fastjson;
-
 import com.alibaba.fastjson.JSON;
-
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description: json工具类 支持各种数据类型转换
@@ -12,10 +11,10 @@ import java.util.List;
 public class FastJsonUtils {
 
         //默认日期格式（年月日时分秒）
-        public static final String default_dateFormat = "yyyy-MM-dd HH:mm:ss";
+        private static final String default_dateFormat = "yyyy-MM-dd HH:mm:ss";
 
         //存在时间格式（年月日）
-        public static final String dateFormat = "yyyy-MM-dd";
+        private static final String dateFormat = "yyyy-MM-dd";
 
         /**
          * json字符串转对象
@@ -81,10 +80,20 @@ public class FastJsonUtils {
          * @param str json字符串
          * @param clazz 要转换的对象
          * @param <T>
-         * @return
+         * @return List<T>
          */
         public static <T> List<T> jsonTolist(String str, Class<T> clazz) {
             return JSON.parseArray(str,clazz);
         }
+
+    /**
+     * json格式解析为Map，不解决格式时间问题
+     * @param str json字符串
+     * @return Map<String,String>
+     */
+     public static Map<String,String> jsonToMap(String str){
+         return JSON.parseObject(str,Map.class);
+     }
+
 
     }

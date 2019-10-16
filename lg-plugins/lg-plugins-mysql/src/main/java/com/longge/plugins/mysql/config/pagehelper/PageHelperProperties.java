@@ -2,8 +2,10 @@ package com.longge.plugins.mysql.config.pagehelper;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import java.util.Properties;
 /**
- * Created by fp295 on 2018/4/7.
- */
+ * @description 分页属性
+ * @author jianglong
+ * @create 2019-09-24
+ **/
 @ConfigurationProperties(prefix = PageHelperProperties.PAGEHELPER_PREFIX)
 public class PageHelperProperties {
 

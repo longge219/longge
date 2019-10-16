@@ -14,7 +14,7 @@ public abstract class ClassMap{
 	protected static final Map<Integer,ClassHandler> map=new HashMap<Integer, ClassHandler>();
 	protected void init(){
 		map.put(3, new ClassHandler(Payload_3.class));
-		map.put(3, new ClassHandler(Payload_4.class));
+		map.put(4, new ClassHandler(Payload_4.class));
 	}
 
 }

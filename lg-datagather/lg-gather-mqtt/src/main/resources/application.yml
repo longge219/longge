@@ -35,17 +35,31 @@ spring:
       retries: 0
       batch-size: 16384   # 批处理大小
       buffer-memory: 33554432
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
+      value-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
       linger: 5 #延迟发送时间
       properties:  #配置sasl安全机制
         sasl.mechanism:  # PLAIN
         security.protocol: #  SASL_PLAINTEXT
         sasl.jaas.config: #  org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
-      bootstrap-servers: 127.0.0.1:9092
+      bootstrap-servers: 10.30.0.106:9092
       topic: topic_test
+    # 消费者
+    consumer:
+      # 表示kafka不持有当前offset时应当采用的策略
+      auto-offset-reset: earliest
+      key-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
+      value-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
+      group-id: jianglong
+      bootstrap-servers: 10.30.0.106:9092
+      topics: topic_test
+      #配置sasl安全机制
+      properties:
+        sasl.mechanism: # PLAIN
+        security.protocol: #  SASL_PLAINTEXT
+        sasl.jaas.config: # corePoolSize org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
 # 生产成功消息配置
-listener:
+threadlistener:
   visibleLog: false
   listenerQueueSize: 100000
   corePoolSize: 1
@@ -53,8 +67,3 @@ listener:
   poolQueueCapacity: 500
   threadNamePrefix: data-report-kafka-send
   visiblePool: false
-
-# jasypt加密springboot配置文件中的敏感信息
-jasypt:
-  encryptor:
-    password: EbfYkitulv73I2p0mXI50JMXoaxZTKJ7
