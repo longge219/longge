@@ -1,4 +1,5 @@
-package com.longge.plugins.kafka.config;
+package com.longge.gather.kafka.config;
+import com.longge.gather.kafka.listener.KafkaConsumerListener;
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.config.SaslConfigs;
@@ -17,6 +18,7 @@ import org.springframework.kafka.listener.KafkaMessageListenerContainer;
 import org.springframework.util.StringUtils;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
  * @author: jianglong
  * @description: kafka消费者配置
@@ -73,9 +75,10 @@ public class KafkaConsumerConfig {
     @Bean
     public KafkaMessageListenerContainer<String, String> listenerContainer(ConsumerFactory<String, String> cf) {
         // 设置topics
-        ContainerProperties containerProperties = new ContainerProperties(topics);
+        String[] topicsArray = topics.split(",");
+        ContainerProperties containerProperties = new ContainerProperties(topicsArray);
         // 设置消费者监听器
-        containerProperties.setMessageListener(new KafkaListenerConsumer());
+        containerProperties.setMessageListener(new KafkaConsumerListener());
         KafkaMessageListenerContainer<String, String> container = new KafkaMessageListenerContainer<>(cf, containerProperties);
         container.setBeanName("messageListenerContainer");
         return container;

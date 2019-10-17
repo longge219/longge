@@ -30,12 +30,13 @@ public class KafkaProducerListener implements ProducerListener<String, String> {
     public void onSuccess(String topic, Integer partition, String key, String value, RecordMetadata recordMetadata) {
         blockingDeque.add(value);
         if (visibleLog) {
-        //LOGGER.info("kafka生产者key:" + key + " kafka消费者value:" + value);
+        System.out.println("kafka生产消息成功--key:" + key + " --value:" + value);
         }
     }
     /**生产消息失败*/
     @Override
     public void onError(String topic, Integer partition, String key, String value, Exception exception) {
+        System.out.println("kafka生产消息失败--value:" + value + "失败" );
         exception.printStackTrace();
     }
 

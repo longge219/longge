@@ -43,7 +43,6 @@ spring:
         security.protocol: #  SASL_PLAINTEXT
         sasl.jaas.config: #  org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
       bootstrap-servers: 10.30.0.106:9092
-      topic: topic_test
     # 消费者
     consumer:
       # 表示kafka不持有当前offset时应当采用的策略
@@ -52,7 +51,7 @@ spring:
       value-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
       group-id: jianglong
       bootstrap-servers: 10.30.0.106:9092
-      topics: topic_test
+      topics: rtudata,rtudata2  #消费多个主题用逗号分隔
       #配置sasl安全机制
       properties:
         sasl.mechanism: # PLAIN
@@ -60,10 +59,10 @@ spring:
         sasl.jaas.config: # corePoolSize org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
 # 生产成功消息配置
 threadlistener:
-  visibleLog: false
+  visibleLog: true
   listenerQueueSize: 100000
   corePoolSize: 1
   maxPoolSize: 50
   poolQueueCapacity: 500
   threadNamePrefix: data-report-kafka-send
-  visiblePool: false
+  visiblePool: true

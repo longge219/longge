@@ -1,29 +1,23 @@
-package com.longge.plugins.kafka.config;
-
+package com.longge.gather.kafka.listener;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.listener.MessageListener;
 import org.springframework.kafka.support.Acknowledgment;
-import org.springframework.stereotype.Component;
 
 /**
- * @author lianghaiyang
- * @date 2018/12/19
- * 第二种方式配置消费者
- *
+ * @author: jianglong
+ * @description: kafka消费者监听器
+ * @date: 2019-09-24
  */
 @Slf4j
-public class KafkaListenerConsumer implements MessageListener<String, String> {
+public class KafkaConsumerListener implements MessageListener<String, String> {
     @Override
     public void onMessage(ConsumerRecord<String, String> data) {
         //根据不同的主题进行消费
         String topic = data.topic();
         switch (topic) {
-            case "topic_test":
-                log.info("--------------topic_test---------------"+data.value());
-                break;
-            case "topic_test1":
+            case "rtudata":
                 log.info("--------------topic_test---------------"+data.value());
                 break;
             default:

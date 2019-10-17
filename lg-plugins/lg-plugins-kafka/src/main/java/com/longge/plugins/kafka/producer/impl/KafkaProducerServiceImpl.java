@@ -22,7 +22,8 @@ public class KafkaProducerServiceImpl implements KafkaProducerService {
 
     public void sendMessage(String topic , Object msgData){
         executor.execute(() ->{
-            kafkaTemplate.sendDefault(topic, FastJsonUtils.ObjectTojson(msgData));
+            kafkaTemplate.setDefaultTopic(topic);
+            kafkaTemplate.sendDefault(FastJsonUtils.ObjectTojson(msgData));
         });
     }
 }

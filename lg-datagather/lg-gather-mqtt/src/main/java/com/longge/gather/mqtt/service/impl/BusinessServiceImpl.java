@@ -46,7 +46,7 @@ public class BusinessServiceImpl  implements BusinessService{
                     if(!Objects.isNull(protocolHead)){
                         if(protocolHead instanceof Payload_3){
                             Payload_3 payload_3 = (Payload_3) protocolHead;
-                            kafkaProducerServiceImpl.sendMessage("topic_test",payload_3.getPublishDataStr());
+                            kafkaProducerServiceImpl.sendMessage("rtudata",payload_3.getPublishDataStr());
 //                            Map<String,String> pubData = FastJsonUtils.jsonToMap(payload_3.getPublishDataStr());
 //                            for(Map.Entry<String,String> entry: pubData.entrySet()){
 //                                String key = entry.getKey();
