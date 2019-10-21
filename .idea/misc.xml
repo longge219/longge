@@ -9,8 +9,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-core/pom.xml" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/pom.xml" />
       </set>
     </option>

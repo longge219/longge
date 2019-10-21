@@ -12,7 +12,6 @@
     <artifactId>lg-cloud</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lg-cloud-core</module>
         <module>lg-cloud-business</module>
     </modules>
 

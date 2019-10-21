@@ -12,7 +12,7 @@
     <artifactId>lg-flink-task</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lg-flink-task-rtkcalculate</module>
+        <module>lg-flink-task-rtudata-mysql</module>
     </modules>
 
 

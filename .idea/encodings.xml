@@ -5,10 +5,12 @@
     <file url="file://$PROJECT_DIR$/lg-bigdata" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-mysql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata-mysql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-cloud" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-authcenter" charset="UTF-8" />
@@ -17,11 +19,9 @@
     <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-service/lg-cloud-business-service-basic" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-web/lg-cloud-business-web-basic" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lg-cloud/lg-cloud-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-datagather" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-gnss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-http" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-plugins" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lg-plugins/lg-plugins-es" charset="UTF-8" />

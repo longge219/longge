@@ -10,29 +10,31 @@
         <module name="lgcloudbusinessauthcenter" />
         <module name="lggathermqtt" />
         <module name="lg-plugins-mysql" />
-        <module name="lg-gather-mqtt" />
         <module name="lg-cloud-business-authcenter" />
+        <module name="lgcloudbusinessservicebasic" />
         <module name="lg-flink-source-kafka" />
-        <module name="lgflinksourcekafka" />
         <module name="lg-cloud-business-web-basic" />
-        <module name="lgflinksinkes6" />
-        <module name="lg-gather-http" />
+        <module name="lgflinksinkmysql" />
+        <module name="lg-flink-sink-mysql" />
+        <module name="lg-cloud-business-service-basic" />
         <module name="lg-plugins-es" />
         <module name="lgcloudbusinesswebbasic" />
         <module name="lgflinktaskrtkcalculate" />
         <module name="lgcloudbusinesscommon" />
         <module name="lggatherkafka" />
+        <module name="lg-flink-task-rtudata-mysql" />
         <module name="lg-gather-gnss" />
-        <module name="lg-cloud-business-service-basic" />
-        <module name="lgcloudcore" />
-        <module name="lg-cloud-core" />
-        <module name="lgcloudbusinesspluginses" />
-        <module name="lggathergnss" />
         <module name="lg-flink-sink-es6" />
-        <module name="lg-flink-task-rtkcalculate" />
+        <module name="lgcloudbusinesspluginses" />
+        <module name="lgflinktaskrtudatamysql" />
+        <module name="lgcloudcore" />
+        <module name="lgflinksinkes6" />
+        <module name="lgflinksourcekafka" />
+        <module name="lggathergnss" />
+        <module name="lg-gather-http" />
         <module name="lgcloudbusinesspluginsmybatis" />
         <module name="lg-cloud-business-common" />
-        <module name="lgcloudbusinessservicebasic" />
+        <module name="lg-gather-mqtt" />
         <module name="lg-plugins-kafka" />
       </profile>
     </annotationProcessing>
@@ -40,6 +42,8 @@
       <module name="lg-cloud-business-plugins" target="1.8" />
       <module name="lg-cloud-business-plugins-es" target="1.8" />
       <module name="lg-cloud-business-plugins-mybatis" target="1.8" />
+      <module name="lg-cloud-core" target="1.8" />
+      <module name="lg-flink-task-rtkcalculate" target="1.8" />
       <module name="lg-gather-kafka" target="1.8" />
       <module name="lgcloudbusinessutils" target="1.8" />
       <module name="lggatherrtcm" target="1.8" />

@@ -1,10 +1,8 @@
 package com.longge.flink.source.kafka.schemas;
-
 import com.alibaba.fastjson.JSON;
 import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 

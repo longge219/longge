@@ -12,7 +12,6 @@
     <artifactId>lg-cloud-business</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lg-cloud-business-plugins</module>
         <module>lg-cloud-business-web</module>
         <module>lg-cloud-business-service</module>
         <module>lg-cloud-business-authcenter</module>

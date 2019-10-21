@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/lg-system/lg-db-plugins/lgdbplugins.iml" filepath="$PROJECT_DIR$/lg-system/lg-db-plugins/lgdbplugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lgflinkjob.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lgflinkjob.iml" />
       <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lgflinksink.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lgflinksink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-mysql/lgflinksinkmysql.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-mysql/lgflinksinkmysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata-mysql/lgflinktaskrtudatamysql.iml" filepath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata-mysql/lgflinktaskrtudatamysql.iml" />
     </modules>
   </component>
 </project>
