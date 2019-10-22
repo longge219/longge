@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "com.longge.kafka",
+      "type": "com.longge.flink.source.kafka.config.KafkaConfig",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.longge.kafka.auto-offset-reset",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.consumer-from-time",
+      "type": "java.lang.Long",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.kafka-brokers",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.kafka-group-id",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.kafka-zookeeper-connect",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.key-deserializer",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.topics",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    },
+    {
+      "name": "com.longge.kafka.value-deserializer",
+      "type": "java.lang.String",
+      "sourceType": "com.longge.flink.source.kafka.config.KafkaConfig"
+    }
+  ],
+  "hints": []
+}

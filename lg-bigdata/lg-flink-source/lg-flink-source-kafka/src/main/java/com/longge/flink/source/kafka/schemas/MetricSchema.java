@@ -5,11 +5,10 @@ import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import java.io.IOException;
 import java.nio.charset.Charset;
-
 /**
  * @author: jianglong
  * @description: kafka传输对象序列化反序列化
- * @date: 2019-02-22
+ * @date: 2019-10-22
  * */
 public class MetricSchema implements DeserializationSchema<Metrics>, SerializationSchema<Metrics>{
 

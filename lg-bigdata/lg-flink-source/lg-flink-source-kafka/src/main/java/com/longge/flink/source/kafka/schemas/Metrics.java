@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @author: jianglong
  * @description: kafka传输对象定义
- * @date: 2019-02-22
+ * @date: 2019-10-22
  * */
 @Data
 @AllArgsConstructor

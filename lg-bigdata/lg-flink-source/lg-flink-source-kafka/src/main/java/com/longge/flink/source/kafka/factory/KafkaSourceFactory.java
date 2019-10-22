@@ -23,9 +23,8 @@ import com.longge.flink.source.kafka.schemas.Metrics;
  * @create 2019-10-18
  */
 public class KafkaSourceFactory {
-    /**
-     * 设置 kafka 配置
-     */
+
+    /**设置 kafka 配置*/
     public static Properties buildKafkaProps(ParameterTool parameterTool) {
         Properties props = parameterTool.getProperties();
         props.put("bootstrap.servers", parameterTool.get(KafkaPropertiesConstants.KAFKA_BROKERS));
@@ -37,7 +36,7 @@ public class KafkaSourceFactory {
         return props;
     }
 
-
+    /**创建kafka-source*/
     public static DataStreamSource<Metrics> createKafkaSource(StreamExecutionEnvironment env) throws IllegalAccessException {
         ParameterTool parameter = (ParameterTool) env.getConfig().getGlobalJobParameters();
         String topic = parameter.getRequired(KafkaPropertiesConstants.METRICS_TOPIC);
@@ -45,20 +44,10 @@ public class KafkaSourceFactory {
         return buildSource(env, topic, time);
     }
 
-    /**
-     * @param env
-     * @param topic
-     * @param time  订阅的时间
-     * @return
-     * @throws IllegalAccessException
-     */
     public static DataStreamSource<Metrics> buildSource(StreamExecutionEnvironment env, String topic, Long time) throws IllegalAccessException {
         ParameterTool parameterTool = (ParameterTool) env.getConfig().getGlobalJobParameters();
         Properties props = buildKafkaProps(parameterTool);
-        FlinkKafkaConsumer011<Metrics> consumer = new FlinkKafkaConsumer011<>(
-                topic,
-                new MetricSchema(),
-                props);
+        FlinkKafkaConsumer011<Metrics> consumer = new FlinkKafkaConsumer011<>(topic, new MetricSchema(), props);
         //重置offset到time时刻
         if (time != 0L) {
             Map<KafkaTopicPartition, Long> partitionOffset = buildOffsetByTime(props, parameterTool, time);
@@ -78,7 +67,6 @@ public class KafkaSourceFactory {
         Map<TopicPartition, OffsetAndTimestamp> offsetResult = consumer.offsetsForTimes(partitionInfoLongMap);
         Map<KafkaTopicPartition, Long> partitionOffset = new HashMap<>();
         offsetResult.forEach((key, value) -> partitionOffset.put(new KafkaTopicPartition(key.topic(), key.partition()), value.offset()));
-
         consumer.close();
         return partitionOffset;
     }

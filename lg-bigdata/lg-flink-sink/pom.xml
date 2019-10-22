@@ -12,7 +12,6 @@
     <artifactId>lg-flink-sink</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>lg-flink-sink-es6</module>
         <module>lg-flink-sink-mysql</module>
     </modules>
 

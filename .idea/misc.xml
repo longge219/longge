@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-es6/pom.xml" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtkcalculate/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils/pom.xml" />
