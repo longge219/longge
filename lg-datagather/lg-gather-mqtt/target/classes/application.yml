@@ -37,16 +37,14 @@ spring:
       buffer-memory: 33554432
       key-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
       value-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
+      bootstrap-servers: 10.30.0.106:9092
       linger: 5 #延迟发送时间
       properties:  #配置sasl安全机制
         sasl.mechanism:  # PLAIN
         security.protocol: #  SASL_PLAINTEXT
         sasl.jaas.config: #  org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
-      bootstrap-servers: 10.30.0.106:9092
-    # 消费者
     consumer:
-      # 表示kafka不持有当前offset时应当采用的策略
-      auto-offset-reset: earliest
+      auto-offset-reset: earliest # 表示kafka不持有当前offset时应当采用的策略
       key-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
       value-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
       group-id: jianglong

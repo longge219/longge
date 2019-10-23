@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-plugins/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-business/lg-cloud-business-utils/pom.xml" />
         <option value="$PROJECT_DIR$/lg-cloud/lg-cloud-core/pom.xml" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-gnss/pom.xml" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-kafka/pom.xml" />
       </set>
     </option>

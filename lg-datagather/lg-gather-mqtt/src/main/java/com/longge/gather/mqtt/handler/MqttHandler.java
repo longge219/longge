@@ -1,6 +1,6 @@
 package com.longge.gather.mqtt.handler;
 import com.longge.gather.mqtt.channel.MqttChannelService;
-import com.longge.gather.mqtt.service.MqttHandlerService;
+import com.longge.gather.mqtt.handler.service.MqttHandlerService;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

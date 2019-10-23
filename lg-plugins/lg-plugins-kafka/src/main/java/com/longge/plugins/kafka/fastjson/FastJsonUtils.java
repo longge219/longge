@@ -38,7 +38,6 @@ public class FastJsonUtils {
 
         /**
          * 对象转json字符串，使用默认日期转换
-         *
          * @param obj 对象
          * @param useDateFormat 自定义时间格式
          * @return

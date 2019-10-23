@@ -20,11 +20,11 @@ public class ServerStart implements BootstrapServer{
             final ParameterTool parameterTool = ExecutionEnvFactory.createParameterTool();
             StreamExecutionEnvironment env = ExecutionEnvFactory.createStreamExecutionEnvironment(parameterTool);
             //从kafka读取数据
-            DataStreamSource<Metrics> data = KafkaSourceFactory.createKafkaSource(env);
+            DataStreamSource<Metrics> dataStreamKafkaSource = KafkaSourceFactory.createKafkaSource(env);
             //存储任务
 
             //执行任务
-            env.execute("longge-flink");
+            env.execute("rtudata-flink");
         }catch ( Exception e){
                 e.printStackTrace();
         }
