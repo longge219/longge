@@ -36,13 +36,13 @@ public abstract class AbstractChannelService extends PublishApiSevice implements
     protected  static char SPLITOR = '/';
 
     //线程池线程管理
-    protected ExecutorService executorService =Executors.newCachedThreadPool();
+    protected ExecutorService executorService = Executors.newCachedThreadPool();
 
     //全局channel缓存
     protected static ConcurrentHashMap<String , MqttChannel> mqttChannels = new ConcurrentHashMap<>();
 
     //缓存chnnel主题消息
-    protected static CacheMap<String,MqttChannel> cacheMap= new CacheMap<>();
+    protected static CacheMap<String,MqttChannel> cacheMap = new CacheMap<>();
  
     //缓存chnnel保留消息
     protected  static  ConcurrentHashMap<String,ConcurrentLinkedQueue<RetainMessage>> retain = new ConcurrentHashMap<>();

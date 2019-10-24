@@ -1,6 +1,6 @@
 package com.longge.flink.task.rtu.app.start;
-import com.longge.flink.source.kafka.factory.KafkaSourceFactory;
-import com.longge.flink.source.kafka.schemas.Metrics;
+import com.longge.flink.source.kafka.factory.EquipLineDataKafkaSourceFactory;
+import com.longge.flink.source.kafka.model.EquipLineData;
 import com.longge.flink.task.rtu.flink.factory.ExecutionEnvFactory;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
@@ -20,7 +20,7 @@ public class ServerStart implements BootstrapServer{
             final ParameterTool parameterTool = ExecutionEnvFactory.createParameterTool();
             StreamExecutionEnvironment env = ExecutionEnvFactory.createStreamExecutionEnvironment(parameterTool);
             //从kafka读取数据
-            DataStreamSource<Metrics> dataStreamKafkaSource = KafkaSourceFactory.createKafkaSource(env);
+            DataStreamSource<EquipLineData> equipLineDataKafkaSource = EquipLineDataKafkaSourceFactory.createEquipLineDataKafkaSource(env);
             //存储任务
 
             //执行任务

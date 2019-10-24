@@ -1,6 +1,6 @@
 package com.longge.gather.mqtt.channel.impl;
+import com.longge.gather.business.service.BusinessService;
 import com.longge.gather.mqtt.bean.*;
-import com.longge.gather.mqtt.business.service.BusinessService;
 import com.longge.gather.mqtt.common.enums.ConfirmStatus;
 import com.longge.gather.mqtt.common.enums.SessionStatus;
 import com.longge.gather.mqtt.common.enums.SubStatus;
@@ -22,9 +22,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArraySet;
-
 import static io.netty.handler.codec.mqtt.MqttQoS.EXACTLY_ONCE;
-
 /**
  * @description MQTT控制报文channel处理
  * @author jianglong
@@ -158,6 +156,8 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
 			            }
               );
             }
+            /**上线业务处理*/
+            businessServiceImpl.doLinePacket(deviceId,true);
         });
     }
     /**
@@ -211,6 +211,8 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
                         }
                     }
                 });
+               /**上线业务处理*/
+               businessServiceImpl.doLinePacket(deviceId,false);
             });
         }
     }
@@ -305,7 +307,7 @@ public class MqttChannelServiceImpl extends AbstractChannelService{
                                     .build(), true);
                 }
                 //消息解码业务处理
-                businessServiceImpl.doPublishPacket(topic,bytes);
+                businessServiceImpl.doPublishPacket(getDeviceId(channel),topic,bytes);
             }
         });
 

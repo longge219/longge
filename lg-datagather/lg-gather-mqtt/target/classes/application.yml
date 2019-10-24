@@ -49,7 +49,7 @@ spring:
       value-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
       group-id: jianglong
       bootstrap-servers: 10.30.0.106:9092
-      topics: rtudata,rtudata2  #消费多个主题用逗号分隔
+      topics: COMMANDDATA  #消费多个主题用逗号分隔
       #配置sasl安全机制
       properties:
         sasl.mechanism: # PLAIN

@@ -54,10 +54,14 @@ public enum DataType {
 
     GnssBinaryData ("023"); //二进制数据(默认每1小时传一次)
 
-    private final String dataType;
+    private final String dataTypeValue;
 
-    DataType(String dataType) {
-        this.dataType = dataType;
+    DataType(String dataTypeValue) {
+        this.dataTypeValue = dataTypeValue;
+    }
+
+    public String getDataTypeValue(){
+        return dataTypeValue;
     }
 
 }
