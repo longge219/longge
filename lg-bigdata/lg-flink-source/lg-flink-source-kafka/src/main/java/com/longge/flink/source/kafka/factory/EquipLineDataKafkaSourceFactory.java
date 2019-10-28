@@ -55,7 +55,7 @@ public class EquipLineDataKafkaSourceFactory {
             consumer.setStartFromSpecificOffsets(partitionOffset);
         }
         //设置水印
-        consumer.assignTimestampsAndWatermarks(new EquipLineDataWatermark());
+        //consumer.assignTimestampsAndWatermarks(new EquipLineDataWatermark());
         return env.addSource(consumer);
     }
 

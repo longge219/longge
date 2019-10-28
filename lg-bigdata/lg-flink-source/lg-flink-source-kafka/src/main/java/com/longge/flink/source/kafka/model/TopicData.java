@@ -1,5 +1,4 @@
 package com.longge.flink.source.kafka.model;
-import com.longge.flink.source.kafka.utils.DateUtils;
 import lombok.Data;
 import java.io.Serializable;
 
@@ -15,5 +14,5 @@ public class TopicData implements Serializable{
 
      long  acqTime;//采集时间及数据产生时间
 
-     long recTime = DateUtils.getCurrentTime();//服务器接收数据时间
+     long recTime ;//服务器接收数据时间
 }

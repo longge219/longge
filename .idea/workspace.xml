@@ -2,75 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3913ca1b-53fe-4560-aebc-c4548d427822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/constant/KafkaTopicConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipAcqData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipStateData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/FastJsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/fastjson/FastJsonDeserializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/fastjson/FastJsonSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/fastjson/FastJsonUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/constant/KafkaTopicConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipAcqData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipLineData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipStateData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/TopicData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/PayloadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/Payload3ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/Payload4ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/GatherMqttLauncher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/service/MqttHandlerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/service/impl/MqttHandlerServiceImpl$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/handler/service/impl/MqttHandlerServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/kafka_client_jaas.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetEquipmentInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetProjectInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetUserInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lg-datagather/target/classes/securesocket.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/sink/SinkToMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/KafkaSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/MetricSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/Metrics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/MetricWatermark.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/EquipLineDataWatermark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/factory/KafkaSourceFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/MetricSchema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/Metrics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/watermarks/MetricWatermark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/lgflinktaskrtudatamysql.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-mysql/lgflinksinkmysql.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/FastJsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/fastjson/FastJsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/model/EquipLineData.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/model/EquipLineData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/model/TopicData.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/model/TopicData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/target/classes/com/longge/flink/source/kafka/utils/FastJsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/app/start/ServerStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/app/start/ServerStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/utils/FastJsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/target/classes/com/longge/flink/task/rtu/utils/FastJsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/business/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/BusinessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/business/service/impl/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/BusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/emun/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/code/emun/DataType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/common/fastjson/FastJsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/utils/FastJsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/AbstractChannelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/code/emun/DataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/code/emun/DataType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/mqtt/common/fastjson/FastJsonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/target/classes/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/kafka_client_jaas.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetEquipmentInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetProjectInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/mapper/XcnetUserInfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg-datagather/target/classes/securesocket.jks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/target/classes/com/longge/plugins/kafka/config/KafkaProducerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/target/classes/com/longge/plugins/kafka/config/KafkaProducerListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/target/classes/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/target/classes/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -125,40 +98,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/RtuDataLauncher.java">
+        <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/GatherMqttLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java">
+        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/RtuDataLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="132">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/sink/SinkToMySQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,19 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/GatherMqttLauncher.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/service/impl/BusinessServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/service/MqttHandlerService.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/service/impl/MqttHandlerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/business/model/RtuData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/business/service/impl/BusinessServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/business/service/BusinessService.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/RtuData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/RtuSate.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/utils/TransRtuData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipAcqData.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipSate.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/constant/KafkaTopicConstant.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/Payload3Service.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/utils/pool/StandardThreadExecutor.java" />
@@ -255,28 +225,41 @@
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipLineData.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/BusinessServiceImpl.java" />
         <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.java" />
         <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/constant/KafkaTopicConstant.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/model/TopicData.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/schemas/MetricSchema.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/FastJsonUtils.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonUtils.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/constant/KafkaTopicConstant.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/EquipLineDataWatermark.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/MetricSchema.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/KafkaSourceFactory.java" />
-        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/pom.xml" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/utils/KafkaUtil.java" />
+        <option value="$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/TopicData.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/Main.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/EquipLineData.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/TestMain.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java" />
+        <option value="$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/flink/factory/ExecutionEnvFactory.java" />
         <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/Main.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/sink/SinkToMySQL.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -317,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,17 +312,163 @@
               <item name="longge" type="462c0819:PsiDirectoryNode" />
               <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source-kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source-kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-source-kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+              <item name="rtu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="longge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="longge" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-bigdata" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task" type="462c0819:PsiDirectoryNode" />
+              <item name="lg-flink-task-rtudata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559295040010" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -348,18 +476,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.longge.flink.task.rtu.utils" />
       <recent name="com.longge.flink.source.kafka.watermarks" />
       <recent name="com.longge.flink.source.kafka.schemas" />
       <recent name="com.longge.flink.source.kafka.factory" />
       <recent name="com.longge.flink.source.kafka.constant" />
-      <recent name="com.longge.flink.source.kafka.fastjson" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-task\lg-flink-task-rtudata\src\main\java\com\longge\flink\task\rtu\test" />
+      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-task\lg-flink-task-rtudata\src\main\java\com\longge\flink\task\rtu\sink" />
       <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-source\lg-flink-source-kafka\src\main\java\com\longge\flink\source\kafka\factory" />
       <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-source\lg-flink-source-kafka\src\main\java\com\longge\flink\source\kafka\model" />
       <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-source\lg-flink-source-kafka\src\main\java\com\longge\flink\source\kafka\utils" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-bigdata\lg-flink-task\lg-flink-task-rtudata\src\main\java\com\longge\flink\task\rtu\kafka\model" />
-      <recent name="F:\tools\IDEA\IDEA_WORKSPACE\longge\lg-datagather\lg-gather-mqtt\src\main\java\com\longge\gather\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -376,11 +504,11 @@
   </component>
   <component name="RunManager" selected="Application.RtuDataLauncher">
     <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.longge.gather.utils.DateUtils" />
-      <module name="lg-gather-mqtt" />
+      <option name="MAIN_CLASS_NAME" value="com.longge.flink.task.rtu.utils.DateUtils" />
+      <module name="lg-flink-task-rtudata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.longge.gather.utils.*" />
+          <option name="PATTERN" value="com.longge.flink.task.rtu.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -401,12 +529,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatherMqttLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.longge.gather.mqtt.GatherMqttLauncher" />
-      <module name="lg-gather-mqtt" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.flink.task.rtu.utils.Main" />
+      <module name="lg-flink-task-rtudata" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.longge.gather.mqtt.*" />
+          <option name="PATTERN" value="com.longge.flink.task.rtu.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.longge.flink.task.rtu.test.Main" />
+      <module name="lg-flink-task-rtudata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.longge.flink.task.rtu.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -427,26 +568,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UDPClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.longge.gather.test.UDPClient" />
-      <module name="lg-gather-mqtt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.longge.gather.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RtuDataLauncher" />
         <item itemvalue="Application.GatherMqttLauncher (1)" />
         <item itemvalue="Application.DateUtils" />
-        <item itemvalue="Application.GatherMqttLauncher" />
-        <item itemvalue="Application.UDPClient (1)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -608,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571826240710</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="同步更新">
+      <created>1571916978115</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571916978115</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -624,8 +759,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944505" visible="true" weight="0.26877683" />
-      <window_info id="Structure" order="1" sideWeight="0.5005549" side_tool="true" weight="0.33583692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49433962" visible="true" weight="0.2414163" />
+      <window_info id="Structure" order="1" sideWeight="0.50566036" side_tool="true" weight="0.2414163" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -634,8 +769,8 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.31853497" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946353" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731758" weight="0.41065484" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49892703" visible="true" weight="0.43951166" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731758" visible="true" weight="0.4117647" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49892703" weight="0.36847946" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946353" weight="0.32852387" />
@@ -644,14 +779,15 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026824" side_tool="true" weight="0.27857935" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49892703" weight="0.2408435" />
       <window_info anchor="bottom" id="Problems" order="12" sideWeight="0.49946353" weight="0.32852387" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" weight="0.32939914" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3299356" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32939914" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -743,16 +879,28 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/BusinessServiceImpl.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.java</url>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/sink/SinkToMySQL.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -761,323 +909,158 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/longge$Main.ic" NAME="Main Coverage Results" MODIFIED="1571997632466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.longge.flink.task.rtu.test.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/AbstractChannelService.java">
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/KafkaSourceFactory.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/DateUtils.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-sink/lg-flink-sink-mysql/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
+        <state relative-caret-position="297">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/BusinessService.java">
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-mysql/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="-99" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="115" selection-start-line="115" selection-end-line="118" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/TopicData.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-http/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="117">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/model/EquipLineData.java">
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducersConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="-180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/Payload3ServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-99" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/Payload4ServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/constant/KafkaTopicConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="99">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/config/KafkaConsumerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        <state relative-caret-position="137">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/kafka/consumer/listener/KafkaConsumerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1041">
+          <caret line="58" column="73" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/model/Student.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/utils/KafkaUtil.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/TopicData.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/EquipLineData.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/TestMain.java" />
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/KafkaProducerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/BusinessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="53" column="44" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.2.0.RELEASE/spring-kafka-2.2.0.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="249">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/config/KafkaProducerListener.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/datastream/DataStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        <state relative-caret-position="289">
+          <caret line="412" column="29" selection-start-line="412" selection-start-column="29" selection-end-line="412" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/fastjson/FastJsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-plugins/lg-plugins-kafka/src/main/java/com/longge/plugins/kafka/producer/impl/KafkaProducerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/service/impl/BusinessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/channel/impl/MqttChannelServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="214" column="62" selection-start-line="214" selection-start-column="62" selection-end-line="214" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#16236#16237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/service/impl/MqttHandlerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="66" column="95" lean-forward="true" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/mqtt/handler/MqttHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="95" column="54" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/GatherMqttLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/flink/factory/ExecutionEnvFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/model/TopicData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/model/EquipStateData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/constant/KafkaTopicConstant.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/model/EquipAcqData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/business/constant/KafkaTopicConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/BootstrapServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/model/EquipLineData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/Metrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/MetricWatermark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/kafka/schemas/MetricSchema.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/utils/FastJsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/fastjson/FastJsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipAcqData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipStateData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/MetricSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="12" column="66" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/MetricSchema.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/Metrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="18" />
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/TopicData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/EquipLineDataWatermark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/KafkaSourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/constant/KafkaTopicConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="528">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1086,35 +1069,178 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/model/EquipLineData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="462">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/runtime/tasks/StreamTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/runtime/io/StreamInputProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="82" column="25" lean-forward="true" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/test/Main.java" />
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/constant/KafkaTopicConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2.jar!/org/apache/flink/streaming/api/operators/StreamMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/flink/properties/TaskPropertiesConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/flink/factory/ExecutionEnvFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/properties/KafkaPropertiesConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/factory/EquipLineDataKafkaSourceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="448">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/watermarks/EquipLineDataWatermark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
+          <folding>
+            <element signature="e#12939#12940#0" expanded="true" />
+            <element signature="e#12986#12987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/FastJsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="27" selection-start-line="27" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="276" column="5" selection-start-line="276" selection-start-column="5" selection-end-line="276" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-connector-kafka-base_2.11/1.7.2/flink-connector-kafka-base_2.11-1.7.2.jar!/org/apache/flink/streaming/util/serialization/KeyedDeserializationSchemaWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-source/lg-flink-source-kafka/src/main/java/com/longge/flink/source/kafka/schemas/EquipLineDataSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-datagather/lg-gather-mqtt/src/main/java/com/longge/gather/GatherMqttLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/RtuDataLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="132">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/app/start/ServerStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="157">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/utils/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/java/com/longge/flink/task/rtu/sink/SinkToMySQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lg-bigdata/lg-flink-task/lg-flink-task-rtudata/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>

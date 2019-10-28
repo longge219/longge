@@ -1,6 +1,7 @@
 package com.longge.plugins.kafka.producer.impl;
 import com.longge.plugins.kafka.fastjson.FastJsonUtils;
 import com.longge.plugins.kafka.producer.KafkaProducerService;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
@@ -22,7 +23,9 @@ public class KafkaProducerServiceImpl implements KafkaProducerService {
 
     public void sendMessage(String topic , Object msgData){
         executor.execute(() ->{
-            kafkaTemplate.send(topic,FastJsonUtils.ObjectTojson(msgData));
+            ProducerRecord record = new ProducerRecord<String, String>(topic, null, null, FastJsonUtils.ObjectTojson(msgData));
+            kafkaTemplate.send(record);
+            //kafkaTemplate.send(topic,FastJsonUtils.ObjectTojson(msgData));
         });
     }
 }

@@ -17,7 +17,7 @@ public class KafkaConsumerListener implements MessageListener<String, String> {
         //根据不同的主题进行消费
         String topic = data.topic();
         switch (topic) {
-            case "rtudata":
+            case "EQUIPLINEDATA":
                 log.info("--------------topic_test---------------"+data.value());
                 break;
             default:

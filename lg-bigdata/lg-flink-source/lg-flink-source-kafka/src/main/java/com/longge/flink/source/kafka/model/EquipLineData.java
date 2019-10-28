@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EquipLineData extends TopicData{
 
-    private boolean isConnect;//是否是上线
+    private boolean connect;//是否是上线
 
 }

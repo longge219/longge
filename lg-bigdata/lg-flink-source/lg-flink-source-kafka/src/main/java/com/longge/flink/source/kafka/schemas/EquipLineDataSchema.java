@@ -1,6 +1,7 @@
 package com.longge.flink.source.kafka.schemas;
 import com.alibaba.fastjson.JSON;
 import com.longge.flink.source.kafka.model.EquipLineData;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
@@ -24,7 +25,9 @@ public class EquipLineDataSchema implements DeserializationSchema<EquipLineData>
             return null;
         }
         try{
-        return JSON.parseObject(new String(bytes), EquipLineData.class);
+            String tmp = StringEscapeUtils.unescapeJava(new String(bytes));
+            String tmp2 = tmp.substring(1,tmp.length()-1);
+            return JSON.parseObject(tmp2, EquipLineData.class);
         }catch(Exception e){
             return null;
         }

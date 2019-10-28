@@ -63,12 +63,24 @@ public class DateUtils {
 
 
 	/**时间转日期*/
-	public static String dateToTime(long dataL){
+	public static String timeToDateStr(long dataL){
 		try{
 			Calendar cal = Calendar.getInstance();
 			cal.setTimeInMillis(dataL);
 			String dayStr = new SimpleDateFormat(defaultFormat).format(cal.getTime());
 			return dayStr;
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/**时间转日期*/
+	public static Date timeToDate(long dataL){
+		try{
+			Calendar cal = Calendar.getInstance();
+			cal.setTimeInMillis(dataL);
+			return cal.getTime();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -263,5 +275,4 @@ public class DateUtils {
 		}
 		return 0;
 	}
-
 }

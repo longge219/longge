@@ -1,9 +1,9 @@
 package com.longge.flink.task.rtu.utils;
-
 import com.alibaba.fastjson.JSON;
-
+import com.alibaba.fastjson.JSONObject;
+import com.longge.flink.source.kafka.model.EquipLineData;
+import org.apache.commons.lang3.StringEscapeUtils;
 import java.util.List;
-
 /**
  * @Description: json工具类 支持各种数据类型转换
  * @Author: jianglong
@@ -25,7 +25,9 @@ public class FastJsonUtils {
          * @return
          */
         public static <T> T jsonToObject(String str,Class<T> clazz) {
-            return JSON.parseObject(str,clazz);
+            String tmp = StringEscapeUtils.unescapeJava(str);
+            String tmp2 = tmp.substring(1,tmp.length()-1);
+            return JSON.parseObject(tmp2,clazz);
         }
 
         /**
@@ -35,7 +37,6 @@ public class FastJsonUtils {
          * @return
          */
         public static String ObjectTojson(Object obj) {
-
             return ObjectTojson(obj, false);
         }
 
