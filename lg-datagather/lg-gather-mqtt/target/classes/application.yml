@@ -35,8 +35,8 @@ spring:
       retries: 0
       batch-size: 16384   # 批处理大小
       buffer-memory: 33554432
-      key-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
-      value-serializer: com.longge.plugins.kafka.fastjson.FastJsonSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       bootstrap-servers: 10.30.0.106:9092
       linger: 5 #延迟发送时间
       properties:  #配置sasl安全机制
@@ -44,12 +44,10 @@ spring:
         security.protocol: #  SASL_PLAINTEXT
         sasl.jaas.config: #  org.apache.kafka.common.security.plain.PlainLoginModule required username="xxxx" password="xxxx";
     consumer:
-      auto-offset-reset: earliest # 表示kafka不持有当前offset时应当采用的策略
-      key-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
-      value-deserializer: com.longge.plugins.kafka.fastjson.FastJsonDeserializer
+      auto-offset-reset: earliest # 表示kafka不持有当前offset时应当采用的策略  earliest  latest
       group-id: jianglong
       bootstrap-servers: 10.30.0.106:9092
-      topics: EQUIPCOMMAND  #消费多个主题用逗号分隔
+      topics: EQUIPCOMMANDDATA #消费多个主题用逗号分隔
       #配置sasl安全机制
       properties:
         sasl.mechanism: # PLAIN

@@ -6,7 +6,7 @@ import lombok.Data;
  * @create 2019-10-23
  **/
 @Data
-public class EquipLineData extends TopicData{
+public class EquipLineData extends TopicData {
 
     private boolean isConnect;//是否是上线
 

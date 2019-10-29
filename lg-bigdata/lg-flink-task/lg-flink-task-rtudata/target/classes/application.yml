@@ -1,2 +1,11 @@
 server:
   port: 81
+mysql:
+  config:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.30.0.160:3306/xcnet?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    userName: root
+    passWord: 123456
+    initialSize: 5
+    maxTotal: 10
+    minIdle: 2

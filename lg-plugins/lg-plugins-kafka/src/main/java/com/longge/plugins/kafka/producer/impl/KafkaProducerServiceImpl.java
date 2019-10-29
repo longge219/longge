@@ -25,7 +25,7 @@ public class KafkaProducerServiceImpl implements KafkaProducerService {
         executor.execute(() ->{
             ProducerRecord record = new ProducerRecord<String, String>(topic, null, null, FastJsonUtils.ObjectTojson(msgData));
             kafkaTemplate.send(record);
-            //kafkaTemplate.send(topic,FastJsonUtils.ObjectTojson(msgData));
+            //kafkaTemplate.send(topic, FastJsonUtils.ObjectTojson(msgData));
         });
     }
 }

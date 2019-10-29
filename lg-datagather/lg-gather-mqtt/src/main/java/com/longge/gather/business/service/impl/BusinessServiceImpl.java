@@ -5,7 +5,6 @@ import com.longge.gather.business.model.TopicData;
 import com.longge.gather.business.service.BusinessService;
 import com.longge.gather.business.service.PayloadService;
 import com.longge.gather.mqtt.code.PayloadDecode;
-import com.longge.gather.mqtt.code.emun.DataType;
 import com.longge.gather.mqtt.code.protocol.Payload_3;
 import com.longge.gather.mqtt.code.protocol.Payload_4;
 import com.longge.gather.mqtt.code.protocol.ProtocolHead;
@@ -72,7 +71,7 @@ public class BusinessServiceImpl implements BusinessService {
                         if (protocolHead instanceof Payload_3) {
                             Map<String, List<TopicData>> topicDataMap = payload3ServiceImpl.toTopicData(deviceId,protocolHead);
                             for (Map.Entry<String, List<TopicData>> entry : topicDataMap.entrySet()) {
-                                 kafkaProducerServiceImpl.sendMessage(entry.getKey() ,entry.getValue());
+                                 kafkaProducerServiceImpl.sendMessage(entry.getKey() , entry.getValue());
                             }
                         } else if (protocolHead instanceof Payload_4) {
                             Map<String, List<TopicData>> topicDataMap = payload4ServiceImpl.toTopicData(deviceId,protocolHead);

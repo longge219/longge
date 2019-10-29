@@ -6,7 +6,6 @@ import com.longge.flink.source.kafka.schemas.EquipLineDataSchema;
 import com.longge.flink.source.kafka.watermarks.EquipLineDataWatermark;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
-import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 import org.apache.flink.streaming.connectors.kafka.internals.KafkaTopicPartition;
@@ -42,6 +41,7 @@ public class EquipLineDataKafkaSourceFactory {
     public static DataStreamSource<EquipLineData> createEquipLineDataKafkaSource(StreamExecutionEnvironment env) throws IllegalAccessException {
         ParameterTool parameter = (ParameterTool) env.getConfig().getGlobalJobParameters();
         Long time = parameter.getLong(KafkaPropertiesConstants.CONSUMER_FROM_TIME, 0L);
+        env.enableCheckpointing(parameter.getInt(KafkaPropertiesConstants.STREAM_CHECKPOINT_INTERVAL)); // 非常关键，一定要设置启动检查点！！
         return buildSource(env, KafkaTopicConstant.EQUIPLINEDATA, time);
     }
 
@@ -55,7 +55,7 @@ public class EquipLineDataKafkaSourceFactory {
             consumer.setStartFromSpecificOffsets(partitionOffset);
         }
         //设置水印
-        //consumer.assignTimestampsAndWatermarks(new EquipLineDataWatermark());
+        consumer.assignTimestampsAndWatermarks(new EquipLineDataWatermark());
         return env.addSource(consumer);
     }
 

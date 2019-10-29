@@ -7,7 +7,7 @@ import lombok.Data;
  * @create 2019-10-23
  **/
 @Data
-public class EquipStateData extends TopicData{
+public class EquipStateData extends TopicData {
 
     private double V;//供电电压
 

@@ -20,4 +20,6 @@ public class KafkaPropertiesConstants {
     public static final String  VALUE_DESERIALIZER = "value.deserializer";
 
     public static final String AUTO_OFFSET_RESET = "auto.offset.reset";
+
+    public static final String STREAM_CHECKPOINT_INTERVAL  = "stream.checkpoint.interval"; // 非常关键，一定要设置启动检查点！！
 }

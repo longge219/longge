@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>lg-flink-sink-mysql</artifactId>
     <dependencies>
+
+        <!--springboot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!--flink -->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -21,6 +27,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <!--MYSQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.1.1</version>
         </dependency>
     </dependencies>
 

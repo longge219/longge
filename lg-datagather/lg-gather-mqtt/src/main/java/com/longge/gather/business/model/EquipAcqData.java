@@ -6,7 +6,7 @@ import lombok.Data;
  * @create 2019-10-23
  **/
 @Data
-public class EquipAcqData extends TopicData{
+public class EquipAcqData extends TopicData {
 
     private String dataType; //数据类型及传感器类型
 
